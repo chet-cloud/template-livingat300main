@@ -1,0 +1,1780 @@
+[
+    {
+        "id": 3546,
+        "date": "2019-03-15T19:59:42",
+        "date_gmt": "2019-03-15T19:59:42",
+        "guid": {
+            "rendered": "https://livingat300main.ca/?page_id=3546"
+        },
+        "modified": "2019-03-15T20:49:24",
+        "modified_gmt": "2019-03-15T20:49:24",
+        "slug": "home",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/",
+        "title": {
+            "rendered": "Home"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 5,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Home - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Home - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"article:modified_time\" content=\"2019-03-15T20:49:24+00:00\" />\n<meta name=\"author\" content=\"Aldreich Aguilar\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/#webpage\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Home - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2019-03-15T19:59:42+00:00\",\"dateModified\":\"2019-03-15T20:49:24+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Home\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Home - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Home - Living at 300 Main Downtown Winnipeg",
+            "og_url": "https://livingat300main.ca/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "article_modified_time": "2019-03-15T20:49:24+00:00",
+            "author": "Aldreich Aguilar",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/#webpage",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Home - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2019-03-15T19:59:42+00:00",
+                        "dateModified": "2019-03-15T20:49:24+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Home"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/3546"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/5"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=3546"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/3546/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 3547,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/3546/revisions/3547"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=3546"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2180,
+        "date": "2018-11-29T17:23:09",
+        "date_gmt": "2018-11-29T17:23:09",
+        "guid": {
+            "rendered": "https://livingat300main.ca/?page_id=2180"
+        },
+        "modified": "2018-11-29T17:23:09",
+        "modified_gmt": "2018-11-29T17:23:09",
+        "slug": "exchange-district-events",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/events/exchange-district-events/",
+        "title": {
+            "rendered": "Exchange District Events"
+        },
+        "content": {
+            "rendered": "\t\t<div class=\"row_grid wpea_frontend_archive\">\n\t\t\tNo Events are found.\t\t</div>\n\t\t<style type=\"text/css\">\n\t\t\t.wpea_frontend_archive .event_date{\n\t\t\t    background-color: #039ED7;\n\t\t\t}\n\t\t\t.wpea_frontend_archive .event_desc .event_title, .wpea_frontend_archive .event_desc a{\n\t\t\t    color: #039ED7;\n\t\t\t}\n\t\t</style>\n\t\t\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 5,
+        "featured_media": 0,
+        "parent": 648,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Exchange District Events - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/events/exchange-district-events/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Exchange District Events - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/events/exchange-district-events/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta name=\"author\" content=\"Aldreich Aguilar\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/events/exchange-district-events/#webpage\",\"url\":\"https://livingat300main.ca/events/exchange-district-events/\",\"name\":\"Exchange District Events - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-29T17:23:09+00:00\",\"dateModified\":\"2018-11-29T17:23:09+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/events/exchange-district-events/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/events/exchange-district-events/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/events/exchange-district-events/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\",\"item\":\"https://livingat300main.ca/events/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Exchange District Events\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Exchange District Events - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/events/exchange-district-events/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Exchange District Events - Living at 300 Main Downtown Winnipeg",
+            "og_url": "https://livingat300main.ca/events/exchange-district-events/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "author": "Aldreich Aguilar",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/events/exchange-district-events/#webpage",
+                        "url": "https://livingat300main.ca/events/exchange-district-events/",
+                        "name": "Exchange District Events - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-29T17:23:09+00:00",
+                        "dateModified": "2018-11-29T17:23:09+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/events/exchange-district-events/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/events/exchange-district-events/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/events/exchange-district-events/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Events",
+                                "item": "https://livingat300main.ca/events/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "Exchange District Events"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2180"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/5"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=2180"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2180/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2181,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2180/revisions/2181"
+                }
+            ],
+            "up": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/648"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=2180"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 2066,
+        "date": "2018-11-28T22:38:52",
+        "date_gmt": "2018-11-28T22:38:52",
+        "guid": {
+            "rendered": "https://livingat300main.ca/?page_id=2066"
+        },
+        "modified": "2018-11-28T22:38:52",
+        "modified_gmt": "2018-11-28T22:38:52",
+        "slug": "downtown-events",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/events/downtown-events/",
+        "title": {
+            "rendered": "Downtown Events"
+        },
+        "content": {
+            "rendered": "\t\t<div class=\"row_grid wpea_frontend_archive\">\n\t\t\tNo Events are found.\t\t</div>\n\t\t<style type=\"text/css\">\n\t\t\t.wpea_frontend_archive .event_date{\n\t\t\t    background-color: #039ED7;\n\t\t\t}\n\t\t\t.wpea_frontend_archive .event_desc .event_title, .wpea_frontend_archive .event_desc a{\n\t\t\t    color: #039ED7;\n\t\t\t}\n\t\t</style>\n\t\t\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 5,
+        "featured_media": 0,
+        "parent": 648,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Downtown Events - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/events/downtown-events/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Downtown Events - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/events/downtown-events/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta name=\"author\" content=\"Aldreich Aguilar\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/events/downtown-events/#webpage\",\"url\":\"https://livingat300main.ca/events/downtown-events/\",\"name\":\"Downtown Events - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-28T22:38:52+00:00\",\"dateModified\":\"2018-11-28T22:38:52+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/events/downtown-events/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/events/downtown-events/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/events/downtown-events/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\",\"item\":\"https://livingat300main.ca/events/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Downtown Events\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Downtown Events - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/events/downtown-events/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Downtown Events - Living at 300 Main Downtown Winnipeg",
+            "og_url": "https://livingat300main.ca/events/downtown-events/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "author": "Aldreich Aguilar",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/events/downtown-events/#webpage",
+                        "url": "https://livingat300main.ca/events/downtown-events/",
+                        "name": "Downtown Events - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-28T22:38:52+00:00",
+                        "dateModified": "2018-11-28T22:38:52+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/events/downtown-events/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/events/downtown-events/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/events/downtown-events/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Events",
+                                "item": "https://livingat300main.ca/events/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "Downtown Events"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2066"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/5"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=2066"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2066/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2067,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/2066/revisions/2067"
+                }
+            ],
+            "up": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/648"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=2066"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 1897,
+        "date": "2018-11-27T16:38:33",
+        "date_gmt": "2018-11-27T16:38:33",
+        "guid": {
+            "rendered": "http://livingat300main.ca/my-account/"
+        },
+        "modified": "2018-11-27T16:38:33",
+        "modified_gmt": "2018-11-27T16:38:33",
+        "slug": "my-account",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/my-account/",
+        "title": {
+            "rendered": "My account"
+        },
+        "content": {
+            "rendered": "<p>[woocommerce_my_account]</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>[woocommerce_my_account</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>My account - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/my-account/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"My account - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:description\" content=\"[woocommerce_my_account\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/my-account/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/my-account/#webpage\",\"url\":\"https://livingat300main.ca/my-account/\",\"name\":\"My account - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-27T16:38:33+00:00\",\"dateModified\":\"2018-11-27T16:38:33+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/my-account/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/my-account/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/my-account/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"My account\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "My account - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/my-account/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "My account - Living at 300 Main Downtown Winnipeg",
+            "og_description": "[woocommerce_my_account",
+            "og_url": "https://livingat300main.ca/my-account/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/my-account/#webpage",
+                        "url": "https://livingat300main.ca/my-account/",
+                        "name": "My account - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-27T16:38:33+00:00",
+                        "dateModified": "2018-11-27T16:38:33+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/my-account/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/my-account/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/my-account/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "My account"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1897"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=1897"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 0,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1897/revisions"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=1897"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 1896,
+        "date": "2018-11-27T16:38:33",
+        "date_gmt": "2018-11-27T16:38:33",
+        "guid": {
+            "rendered": "http://livingat300main.ca/checkout/"
+        },
+        "modified": "2018-11-27T16:38:33",
+        "modified_gmt": "2018-11-27T16:38:33",
+        "slug": "checkout",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/checkout/",
+        "title": {
+            "rendered": "Checkout"
+        },
+        "content": {
+            "rendered": "<p>[woocommerce_checkout]</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>[woocommerce_checkout</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Checkout - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/checkout/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Checkout - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:description\" content=\"[woocommerce_checkout\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/checkout/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/checkout/#webpage\",\"url\":\"https://livingat300main.ca/checkout/\",\"name\":\"Checkout - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-27T16:38:33+00:00\",\"dateModified\":\"2018-11-27T16:38:33+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/checkout/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/checkout/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/checkout/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Checkout\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Checkout - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/checkout/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Checkout - Living at 300 Main Downtown Winnipeg",
+            "og_description": "[woocommerce_checkout",
+            "og_url": "https://livingat300main.ca/checkout/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/checkout/#webpage",
+                        "url": "https://livingat300main.ca/checkout/",
+                        "name": "Checkout - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-27T16:38:33+00:00",
+                        "dateModified": "2018-11-27T16:38:33+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/checkout/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/checkout/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/checkout/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Checkout"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1896"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=1896"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 0,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1896/revisions"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=1896"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 1895,
+        "date": "2018-11-27T16:38:33",
+        "date_gmt": "2018-11-27T16:38:33",
+        "guid": {
+            "rendered": "http://livingat300main.ca/cart/"
+        },
+        "modified": "2018-11-27T16:38:33",
+        "modified_gmt": "2018-11-27T16:38:33",
+        "slug": "cart",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/cart/",
+        "title": {
+            "rendered": "Cart"
+        },
+        "content": {
+            "rendered": "<p>[woocommerce_cart]</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>[woocommerce_cart</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Cart - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/cart/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Cart - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:description\" content=\"[woocommerce_cart\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/cart/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/cart/#webpage\",\"url\":\"https://livingat300main.ca/cart/\",\"name\":\"Cart - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-27T16:38:33+00:00\",\"dateModified\":\"2018-11-27T16:38:33+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/cart/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/cart/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/cart/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cart\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Cart - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/cart/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Cart - Living at 300 Main Downtown Winnipeg",
+            "og_description": "[woocommerce_cart",
+            "og_url": "https://livingat300main.ca/cart/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/cart/#webpage",
+                        "url": "https://livingat300main.ca/cart/",
+                        "name": "Cart - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-27T16:38:33+00:00",
+                        "dateModified": "2018-11-27T16:38:33+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/cart/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/cart/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/cart/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Cart"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1895"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=1895"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 0,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1895/revisions"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=1895"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 1894,
+        "date": "2018-11-27T16:38:33",
+        "date_gmt": "2018-11-27T16:38:33",
+        "guid": {
+            "rendered": "http://livingat300main.ca/shop/"
+        },
+        "modified": "2018-11-28T22:55:57",
+        "modified_gmt": "2018-11-28T22:55:57",
+        "slug": "shop",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/shop/",
+        "title": {
+            "rendered": "Shop"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Shop - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/shop/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Shop - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/shop/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"article:modified_time\" content=\"2018-11-28T22:55:57+00:00\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/shop/#webpage\",\"url\":\"https://livingat300main.ca/shop/\",\"name\":\"Shop - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"datePublished\":\"2018-11-27T16:38:33+00:00\",\"dateModified\":\"2018-11-28T22:55:57+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/shop/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/shop/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/shop/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Shop\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Shop - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/shop/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Shop - Living at 300 Main Downtown Winnipeg",
+            "og_url": "https://livingat300main.ca/shop/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "article_modified_time": "2018-11-28T22:55:57+00:00",
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/shop/#webpage",
+                        "url": "https://livingat300main.ca/shop/",
+                        "name": "Shop - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "datePublished": "2018-11-27T16:38:33+00:00",
+                        "dateModified": "2018-11-28T22:55:57+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/shop/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/shop/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/shop/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Shop"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1894"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=1894"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 2,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1894/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 2154,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/1894/revisions/2154"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=1894"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 648,
+        "date": "2018-11-22T15:06:17",
+        "date_gmt": "2018-11-22T15:06:17",
+        "guid": {
+            "rendered": "http://livingat300main.ca/?page_id=648"
+        },
+        "modified": "2019-03-15T20:56:40",
+        "modified_gmt": "2019-03-15T20:56:40",
+        "slug": "events",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/events/",
+        "title": {
+            "rendered": "Events"
+        },
+        "content": {
+            "rendered": "\t\t<div class=\"row_grid wpea_frontend_archive\">\n\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-weccs-35th-anniversary-concert-2/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10541 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10541_image_307326168_520247416767539_4100484283693506620_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 15 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-weccs-35th-anniversary-concert-2/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">The WECC&#8217;s 35th Anniversary Concert</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  West End Cultural Centre - 586 Ellice Avenue</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-6/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10520 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 19 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-6/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-5/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10519 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 20 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-5/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/the-scattered-seeds-craft-market-weekend-two/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10532 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10532_image_309313684_3250860331830410_7693620863332085673_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 21 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-scattered-seeds-craft-market-weekend-two/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">The Scattered Seeds Craft Market &#8211; Weekend Two!</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  3977 Portage Avenue,Winnipeg,R3K 2E8,CA</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-4/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10518 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 21 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-4/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/the-saturday-morning-all-you-can-eat-cereal-cartoon-party-halloween-edition-2/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10529 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10527_image_306641685_530278225764515_3238218860788937008_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 22 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-saturday-morning-all-you-can-eat-cereal-cartoon-party-halloween-edition-2/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">The  Saturday Morning All-You-Can-Eat Cereal Cartoon Party: Halloween Edition</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Winnipeg Cinematheque - Main Floor - 100 Arthur Street</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-3/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10517 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 22 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-3/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-2/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10516 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 22 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg-2/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10514 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10514_image_299431894_104070249087482_8782160920338372990_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 23 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/escaped-alone-winnipeg/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Escaped Alone Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Prairie Theatre Exchange</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/decolonizing-lens-slash-back/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10530 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10530_image_311042510_5897007100322038_1174393825477019235_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 27 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/decolonizing-lens-slash-back/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Decolonizing Lens Slash/Back</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Winnipeg Art Gallery - 300 Memorial Blvd</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/the-saturday-morning-all-you-can-eat-cereal-cartoon-party-halloween-edition/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10527 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10527_image_306641685_530278225764515_3238218860788937008_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 29 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-saturday-morning-all-you-can-eat-cereal-cartoon-party-halloween-edition/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">The  Saturday Morning All-You-Can-Eat Cereal Cartoon Party: Halloween Edition</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Winnipeg Cinematheque - Main Floor - 100 Arthur Street</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/halloween-howl-2022/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10451 wp_events type-wp_events status-publish has-post-thumbnail hentry event_category-eventbrite\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/10451_image.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 29 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/halloween-howl-2022/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Halloween Howl 2022</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  Children's Museum - 45 Forks Market Road, Winnipeg, MB R3C 4T6</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/haunted-carnival-winnipeg/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10543 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/10/10543_image_309537203_625029245684187_326029302852037576_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 29 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/haunted-carnival-winnipeg/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">Haunted Carnival Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  The Rec Room - 696 Sterling Lyon Pkwy</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a><a href=\"https://livingat300main.ca/wp-event/the-dark-eighties-halloween-party-in-winnipeg/\" >\t\n\t<div class=\"col-wpea-md-6 archive-event post-10252 wp_events type-wp_events status-publish has-post-thumbnail hentry\">\n\t\t<div class=\"wepa_event\" >\n\t\t\t<div class=\"img_placeholder\" style=\" background: url('https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/10252_image_289430694_3271102523171404_8792148485379595860_n.jpg') no-repeat left top;\"></div>\n\t\t\t<div class=\"event_details\">\n\t\t\t\t<div class=\"event_date\">\n\t\t\t\t\t<span class=\"month\">Oct</span>\n\t\t\t\t\t<span class=\"date\"> 31 </span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"event_desc\">\n\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-event/the-dark-eighties-halloween-party-in-winnipeg/\"  rel=\"bookmark\">\n\t\t\t\t\t<div class=\"event_title\">The Dark Eighties Halloween Party in Winnipeg</div>\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"event_address\"><i class=\"fa fa-map-marker\"></i>  The Good Will - Social Club - 625 Portage</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t<div style=\"clear: both\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</a>\t\t\t\t\t<div class=\"col-wpea-md-12\">\n\t\t\t\t\t\t<nav class=\"prev-next-posts\">\n\t\t\t\t\t\t\t<div class=\"prev-posts-link alignright\">\n\t\t\t\t\t\t\t\t<a href=\"https://livingat300main.ca/wp-json/wp/v2/pages/page/2/?per_page=10&#038;page=1\" >Next Events &raquo;</a>\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"next-posts-link alignleft\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</nav>\n\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t<style type=\"text/css\">\n\t\t\t.wpea_frontend_archive .event_date{\n\t\t\t    background-color: #039ED7;\n\t\t\t}\n\t\t\t.wpea_frontend_archive .event_desc .event_title, .wpea_frontend_archive .event_desc a{\n\t\t\t    color: #039ED7;\n\t\t\t}\n\t\t</style>\n\t\t\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 5,
+        "featured_media": 3572,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Events - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/events/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Events - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/events/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"article:modified_time\" content=\"2019-03-15T20:56:40+00:00\" />\n<meta property=\"og:image\" content=\"https://livingat300main.ca/wp-content/uploads/2018/11/events.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1150\" />\n\t<meta property=\"og:image:height\" content=\"600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"author\" content=\"Aldreich Aguilar\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://livingat300main.ca/events/#primaryimage\",\"url\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/11/events.jpg\",\"contentUrl\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/11/events.jpg\",\"width\":1150,\"height\":600},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/events/#webpage\",\"url\":\"https://livingat300main.ca/events/\",\"name\":\"Events - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://livingat300main.ca/events/#primaryimage\"},\"datePublished\":\"2018-11-22T15:06:17+00:00\",\"dateModified\":\"2019-03-15T20:56:40+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/events/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/events/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/events/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Events - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/events/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Events - Living at 300 Main Downtown Winnipeg",
+            "og_url": "https://livingat300main.ca/events/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "article_modified_time": "2019-03-15T20:56:40+00:00",
+            "og_image": [
+                {
+                    "width": 1150,
+                    "height": 600,
+                    "url": "https://livingat300main.ca/wp-content/uploads/2018/11/events.jpg",
+                    "type": "image/jpeg"
+                }
+            ],
+            "author": "Aldreich Aguilar",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "inLanguage": "en-US",
+                        "@id": "https://livingat300main.ca/events/#primaryimage",
+                        "url": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/11/events.jpg",
+                        "contentUrl": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/11/events.jpg",
+                        "width": 1150,
+                        "height": 600
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/events/#webpage",
+                        "url": "https://livingat300main.ca/events/",
+                        "name": "Events - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "primaryImageOfPage": {
+                            "@id": "https://livingat300main.ca/events/#primaryimage"
+                        },
+                        "datePublished": "2018-11-22T15:06:17+00:00",
+                        "dateModified": "2019-03-15T20:56:40+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/events/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/events/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/events/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Events"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/648"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/5"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=648"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 5,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/648/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 924,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/648/revisions/924"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media/3572"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=648"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 272,
+        "date": "2018-10-30T20:08:05",
+        "date_gmt": "2018-10-30T20:08:05",
+        "guid": {
+            "rendered": "http://livingat300main.ca/?page_id=272"
+        },
+        "modified": "2018-10-30T20:08:05",
+        "modified_gmt": "2018-10-30T20:08:05",
+        "slug": "be-a-contributor",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/be-a-contributor/",
+        "title": {
+            "rendered": "Be a Contributor"
+        },
+        "content": {
+            "rendered": "<blockquote><p>Have you been looking for a community to contribute to? Do you love downtown Winnipeg, and wish to write honest reflections that encapsulate your experiences? We all have a story to share.</p></blockquote>\n<h2>The Opportunity</h2>\n<p><b>Living at 300 Main </b>is currently looking for thoughtful and talented writers to submit articles on apartment living and downtown lifestyle. Do you consider yourself to be “plugged-in” to the local scene, a part of the culture and currently living in the Winnipeg area? Our blog features articles that help position our brand (300 Main) while sharing a like-minded vision for life and work balance. Our goal is to present interesting ideas, motivational thought, aesthetic design and practical solutions that inspire people to consider a lifestyle that includes apartment living in downtown Winnipeg. We aim to educate people on the benefits of a rental lifestyle and be an authority on Winnipeg culture and events.</p>\n<div>\n<h2>Tone/Style Details for our Blog:</h2>\n<ul>\n<li>Conversational tone</li>\n<li>Your articles help readers either accomplish, learn, and/or experience something.</li>\n<li>Be specific (ie. lifehacks, healthy foods next door, what to expect at a downtown event, etc.)</li>\n<li>Detailed explanations of living an urban lifestyle</li>\n<li>Does not follow conventional 5 paragraph essay format – short concise paragraphs that are easy to read</li>\n<li>Fully formatted sections to make posts easy to skim through</li>\n</ul>\n<h2>About you:</h2>\n<ul>\n<li>You must have a passion for culture, art, and community.</li>\n<li>You are a storyteller.</li>\n<li>You can come up with story ideas with minimal guidance.</li>\n</ul>\n</div>\n<h2><span style=\"font-size: 24px; background-color: #ffffff; color: #222222;\">Interested?</span></h2>\n<div>After reading through everything above, here’s the exercise that you’ll need to complete to become one of our regular contributors.</div>\n<div></div>\n<div>Send an e-mail to<strong> <a href=\"mailto:living@300main.ca\">living@300main.ca</a> </strong>and pitch us <strong>three story headlines</strong> that you’d potentially like to write based on what you’ve read here. If the headlines fit within our content strategy, then we’ll have you write one of the stories.</div>\n<div></div>\n<div>After we review your piece, if we like it, then we’ll pay you for the post, publish it on our blog, and you’ll become regular contributor. If it doesn’t meet our standards, we will not use it, and you’ll have full rights to the post.</div>\n<div><img loading=\"lazy\" class=\"alignnone wp-image-53\" src=\"http://livingat300main.ca/wp-content/uploads/2018/10/Artboard-1-300x300.jpg\" alt=\"\" width=\"149\" height=\"149\" /></div>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Have you been looking for a community to contribute to? Do you love downtown Winnipeg, and wish to write honest reflections that encapsulate your experiences? We all have a story to share. The Opportunity Living at 300 Main is currently looking for thoughtful and talented writers to submit articles on apartment living and downtown lifestyle. Do you consider yourself to be “plugged-in” to the local scene, a part of the culture and currently living in the Winnipeg area? Our blog features articles that help </p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 277,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Be a Contributor - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/be-a-contributor/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Be a Contributor - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:description\" content=\"Have you been looking for a community to contribute to? Do you love downtown Winnipeg, and wish to write honest reflections that encapsulate your experiences? We all have a story to share. The Opportunity Living at 300 Main is currently looking for thoughtful and talented writers to submit articles on apartment living and downtown lifestyle. Do you consider yourself to be “plugged-in” to the local scene, a part of the culture and currently living in the Winnipeg area? Our blog features articles that help\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/be-a-contributor/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:image\" content=\"https://livingat300main.ca/wp-content/uploads/2018/10/apple-bed-bedroom-5329-1024x683.jpg\" />\n\t<meta property=\"og:image:width\" content=\"1024\" />\n\t<meta property=\"og:image:height\" content=\"683\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. reading time\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://livingat300main.ca/be-a-contributor/#primaryimage\",\"url\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/10/apple-bed-bedroom-5329.jpg\",\"contentUrl\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/10/apple-bed-bedroom-5329.jpg\",\"width\":7360,\"height\":4912,\"caption\":\"Contribute to Living at 300 Main, 300 Main, Winnipeg, Apartments\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/be-a-contributor/#webpage\",\"url\":\"https://livingat300main.ca/be-a-contributor/\",\"name\":\"Be a Contributor - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://livingat300main.ca/be-a-contributor/#primaryimage\"},\"datePublished\":\"2018-10-30T20:08:05+00:00\",\"dateModified\":\"2018-10-30T20:08:05+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/be-a-contributor/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/be-a-contributor/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/be-a-contributor/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Be a Contributor\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "Be a Contributor - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/be-a-contributor/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "Be a Contributor - Living at 300 Main Downtown Winnipeg",
+            "og_description": "Have you been looking for a community to contribute to? Do you love downtown Winnipeg, and wish to write honest reflections that encapsulate your experiences? We all have a story to share. The Opportunity Living at 300 Main is currently looking for thoughtful and talented writers to submit articles on apartment living and downtown lifestyle. Do you consider yourself to be “plugged-in” to the local scene, a part of the culture and currently living in the Winnipeg area? Our blog features articles that help",
+            "og_url": "https://livingat300main.ca/be-a-contributor/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "og_image": [
+                {
+                    "width": 1024,
+                    "height": 683,
+                    "url": "https://livingat300main.ca/wp-content/uploads/2018/10/apple-bed-bedroom-5329-1024x683.jpg",
+                    "type": "image/jpeg"
+                }
+            ],
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "twitter_misc": {
+                "Est. reading time": "2 minutes"
+            },
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "inLanguage": "en-US",
+                        "@id": "https://livingat300main.ca/be-a-contributor/#primaryimage",
+                        "url": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/10/apple-bed-bedroom-5329.jpg",
+                        "contentUrl": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/10/apple-bed-bedroom-5329.jpg",
+                        "width": 7360,
+                        "height": 4912,
+                        "caption": "Contribute to Living at 300 Main, 300 Main, Winnipeg, Apartments"
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/be-a-contributor/#webpage",
+                        "url": "https://livingat300main.ca/be-a-contributor/",
+                        "name": "Be a Contributor - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "primaryImageOfPage": {
+                            "@id": "https://livingat300main.ca/be-a-contributor/#primaryimage"
+                        },
+                        "datePublished": "2018-10-30T20:08:05+00:00",
+                        "dateModified": "2018-10-30T20:08:05+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/be-a-contributor/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/be-a-contributor/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/be-a-contributor/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Be a Contributor"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/272"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=272"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 4,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/272/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 9950,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/272/revisions/9950"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media/277"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=272"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 98,
+        "date": "2018-10-24T17:16:09",
+        "date_gmt": "2018-10-24T17:16:09",
+        "guid": {
+            "rendered": "http://livingat300main.ca/?page_id=98"
+        },
+        "modified": "2019-10-02T15:56:39",
+        "modified_gmt": "2019-10-02T15:56:39",
+        "slug": "about",
+        "status": "publish",
+        "type": "page",
+        "link": "https://livingat300main.ca/about/",
+        "title": {
+            "rendered": "About"
+        },
+        "content": {
+            "rendered": "<p><a href=\"https://livingat300main.ca\">Living at 300 Main</a>, is a community lifestyle blog celebrating the dynamic culture and spirit of downtown Winnipeg. With articles about simple living, design, the arts, events, and great food, Living at 300 Main is your partner in experiencing everything that luxury downtown apartment living has to offer. Free your time, simplify your life, and embrace your passions with Living at 300 Main.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Living at 300 Main, is a community lifestyle blog celebrating the dynamic culture and spirit of downtown Winnipeg. With articles about simple living, design, the arts, events, and great food, Living at 300 Main is your partner in experiencing everything that luxury downtown apartment living has to offer. Free your time, simplify your life, and embrace your passions with Living at 300 Main</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 27,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>About - Living at 300 Main Downtown Winnipeg</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://livingat300main.ca/about/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"About - Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"og:description\" content=\"Living at 300 Main, is a community lifestyle blog celebrating the dynamic culture and spirit of downtown Winnipeg. With articles about simple living, design, the arts, events, and great food, Living at 300 Main is your partner in experiencing everything that luxury downtown apartment living has to offer. Free your time, simplify your life, and embrace your passions with Living at 300 Main\" />\n<meta property=\"og:url\" content=\"https://livingat300main.ca/about/\" />\n<meta property=\"og:site_name\" content=\"Living at 300 Main Downtown Winnipeg\" />\n<meta property=\"article:modified_time\" content=\"2019-10-02T15:56:39+00:00\" />\n<meta property=\"og:image\" content=\"https://livingat300main.ca/wp-content/uploads/2018/09/living-300-background-1024x576.png\" />\n\t<meta property=\"og:image:width\" content=\"1024\" />\n\t<meta property=\"og:image:height\" content=\"576\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"author\" content=\"300Main\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https://livingat300main.ca/#website\",\"url\":\"https://livingat300main.ca/\",\"name\":\"Living at 300 Main Downtown Winnipeg\",\"description\":\"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://livingat300main.ca/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"en-US\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https://livingat300main.ca/about/#primaryimage\",\"url\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/09/living-300-background.png\",\"contentUrl\":\"https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/09/living-300-background.png\",\"width\":1920,\"height\":1080,\"caption\":\"cafe city lifestyle woman on phone drinking coffee texting text message on smartphone app sitting indoor in trendy urban cafe. cool young modern mixed race asian caucasian female model in her 20s.\"},{\"@type\":\"WebPage\",\"@id\":\"https://livingat300main.ca/about/#webpage\",\"url\":\"https://livingat300main.ca/about/\",\"name\":\"About - Living at 300 Main Downtown Winnipeg\",\"isPartOf\":{\"@id\":\"https://livingat300main.ca/#website\"},\"primaryImageOfPage\":{\"@id\":\"https://livingat300main.ca/about/#primaryimage\"},\"datePublished\":\"2018-10-24T17:16:09+00:00\",\"dateModified\":\"2019-10-02T15:56:39+00:00\",\"breadcrumb\":{\"@id\":\"https://livingat300main.ca/about/#breadcrumb\"},\"inLanguage\":\"en-US\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https://livingat300main.ca/about/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://livingat300main.ca/about/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://livingat300main.ca/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"About\"}]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+        "yoast_head_json": {
+            "title": "About - Living at 300 Main Downtown Winnipeg",
+            "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+            },
+            "canonical": "https://livingat300main.ca/about/",
+            "og_locale": "en_US",
+            "og_type": "article",
+            "og_title": "About - Living at 300 Main Downtown Winnipeg",
+            "og_description": "Living at 300 Main, is a community lifestyle blog celebrating the dynamic culture and spirit of downtown Winnipeg. With articles about simple living, design, the arts, events, and great food, Living at 300 Main is your partner in experiencing everything that luxury downtown apartment living has to offer. Free your time, simplify your life, and embrace your passions with Living at 300 Main",
+            "og_url": "https://livingat300main.ca/about/",
+            "og_site_name": "Living at 300 Main Downtown Winnipeg",
+            "article_modified_time": "2019-10-02T15:56:39+00:00",
+            "og_image": [
+                {
+                    "width": 1024,
+                    "height": 576,
+                    "url": "https://livingat300main.ca/wp-content/uploads/2018/09/living-300-background-1024x576.png",
+                    "type": "image/png"
+                }
+            ],
+            "author": "300Main",
+            "twitter_card": "summary_large_image",
+            "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://livingat300main.ca/#website",
+                        "url": "https://livingat300main.ca/",
+                        "name": "Living at 300 Main Downtown Winnipeg",
+                        "description": "Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.",
+                        "potentialAction": [
+                            {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://livingat300main.ca/?s={search_term_string}"
+                                },
+                                "query-input": "required name=search_term_string"
+                            }
+                        ],
+                        "inLanguage": "en-US"
+                    },
+                    {
+                        "@type": "ImageObject",
+                        "inLanguage": "en-US",
+                        "@id": "https://livingat300main.ca/about/#primaryimage",
+                        "url": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/09/living-300-background.png",
+                        "contentUrl": "https://arwebstore.blob.core.windows.net/livingat300main-ca/2018/09/living-300-background.png",
+                        "width": 1920,
+                        "height": 1080,
+                        "caption": "cafe city lifestyle woman on phone drinking coffee texting text message on smartphone app sitting indoor in trendy urban cafe. cool young modern mixed race asian caucasian female model in her 20s."
+                    },
+                    {
+                        "@type": "WebPage",
+                        "@id": "https://livingat300main.ca/about/#webpage",
+                        "url": "https://livingat300main.ca/about/",
+                        "name": "About - Living at 300 Main Downtown Winnipeg",
+                        "isPartOf": {
+                            "@id": "https://livingat300main.ca/#website"
+                        },
+                        "primaryImageOfPage": {
+                            "@id": "https://livingat300main.ca/about/#primaryimage"
+                        },
+                        "datePublished": "2018-10-24T17:16:09+00:00",
+                        "dateModified": "2019-10-02T15:56:39+00:00",
+                        "breadcrumb": {
+                            "@id": "https://livingat300main.ca/about/#breadcrumb"
+                        },
+                        "inLanguage": "en-US",
+                        "potentialAction": [
+                            {
+                                "@type": "ReadAction",
+                                "target": [
+                                    "https://livingat300main.ca/about/"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://livingat300main.ca/about/#breadcrumb",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://livingat300main.ca/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "About"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/98"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/types/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/users/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/comments?post=98"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 3,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/98/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 5870,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/pages/98/revisions/5870"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media/27"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://livingat300main.ca/wp-json/wp/v2/media?parent=98"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]

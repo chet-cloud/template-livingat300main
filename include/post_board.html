@@ -1,0 +1,445 @@
+<style>
+    .list * {
+      border:0px blue solid;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 1200px;
+    }
+
+    .list .left-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .list .post {
+      flex-basis: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+      .list .post:not(:nth-child(3n-2)) {
+        flex-basis: 47%;
+      }
+      .list {
+        padding: 0 20px 0 20px;
+      }
+    }
+
+    .list .right-list div {
+    }
+
+
+    @media screen and (min-width: 768px) {
+      .list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .left-list {
+        flex-basis: 70%;
+      }
+      .right-list {
+        flex-basis: 24%;
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: 60px;
+        align-self: flex-start; /* <-- this is the fix */
+      }
+    }
+
+    .post article a {
+      width: 100%;
+      display: inline-block;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .post article img {
+      width: 100%;
+      height: 100%;
+      transition: transform 1s;
+    }
+
+    .post article img:hover {
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
+    }
+
+    .post .a-title a {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      font-family: 'Playfair Display', sans-serif;
+      color: rgb(17, 17, 17);
+    }
+
+    .post .a-description a {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(68, 68, 68);
+    }
+
+    .post .readmore a {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 18.333px;
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(118, 118, 118);
+    }
+
+
+  </style>
+  <div class="list">
+
+    <div class="left-list">
+
+      <div style="flex-basis: 100%;">
+        <span class="">Latest Articles</span>
+      </div> 
+
+        <div class="post">
+            <article>
+              <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+                <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/garden3-370x247.jpg" />
+              </a>
+              <p class="a-title">
+                <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">Space Ideas for Small Gardens</a>
+              </p>
+              <p class="a-description">
+                Gardening in a small space may seem challenging, especially if you have...
+              </p>
+              <p class="readmore">
+                <a href="">READ MORE</a>
+              </p>
+            </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/pup-6317bb23b019c-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/300-main-pup-patio-at-manyfest/">300 Main Pup Patio at Manyfest</a>
+            </p>
+            <p class="a-description">
+              Manyfest, Winnipeg’s biggest street festival, will return from September 9 to 11.... 
+            </p>
+            <p class="readmore">
+              <a href="">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/garden3-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">Space Ideas for Small Gardens</a>
+            </p>
+            <p class="a-description">
+              Gardening in a small space may seem challenging, especially if you have...
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/300-main-pup-patio-at-manyfest/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-770x513.png" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/summer-smoothies/">Summer Smoothies</a>
+            </p>
+            <p class="a-description">
+              Smoothies are a delicious and healthy way to get through your day.... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/summer-smoothies/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/275864305_497564391750898_2848710138243712305_n-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">Top 5 Food &amp; Drink Spots in Winnipeg this Summer</a>
+            </p>
+            <p class="a-description">
+              Winnipeg is well known for its great food, craft beers, and innovative... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/top-10-summer-cocktails/">Top 10 Summer Cocktails</a>
+            </p>
+            <p class="a-description">
+              The perfect Summer day calls for the perfected Summer cocktail. Beat the... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/top-10-summer-cocktails/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-770x513.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/best-campsites-in-manitoba/">Best Campsites in Manitoba</a>
+            </p>
+            <p class="a-description">
+              Manitoba is known for many things. One of the things we are... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/best-campsites-in-manitoba/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/">To Bark or not To Bark – 5 Basic Steps to Successful Training your Dog</a>
+            </p>
+            <p class="a-description">
+              It seems like our dogs will bark for just about anything and... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-pixabay-158636-1-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/gardens-to-visit-in-winnipeg/">Gardens to Visit in Winnipeg</a>
+            </p>
+            <p class="a-description">
+              Gardening in a small space may seem challenging, especially if you have...
+            </p>
+            <p class="readmore">
+              <a href="">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/garden3-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">Space Ideas for Small Gardens</a>
+            </p>
+            <p class="a-description">
+              Shine some sun on your winter blues by checking one of the... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/gardens-to-visit-in-winnipeg/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/preparing-your-cat-to-move-into-a-new-home/">Preparing Your Cat To Move Into a New Home</a>
+            </p>
+            <p class="a-description">
+              Tips to prepare your Cat to move into a new Hhome 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/preparing-your-cat-to-move-into-a-new-home/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-vlada-karpovich-5357416-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/designing-the-perfect-bedroom/">Designing the Perfect Bedroom</a>
+            </p>
+            <p class="a-description">
+              Our bedroom is one of the most important spaces in the home.... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/designing-the-perfect-bedroom/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-770x513.png" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/">Spring Getaways in Manitoba</a>
+            </p>
+            <p class="a-description">
+              Manitoba is full of amazing adventures not only just within the walls... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/04/pexels-pixabay-33197-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/diy-gifts-for-mom/">DIY Gifts for Mom</a>
+            </p>
+            <p class="a-description">
+              Mother’s Day is May 8th, and it seems like no matter how... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/diy-gifts-for-mom/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/04/pexels-andrea-piacquadio-790357-370x247.png" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/staying-fashionable-in-the-slush-and-rain/">Staying Fashionable in the Slush and Rain</a>
+            </p>
+            <p class="a-description">
+              It is safe to say the spring season is finally here to... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/staying-fashionable-in-the-slush-and-rain/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/04/pexels-cottonbro-4503273-770x513.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/tips-for-your-indoor-garden/">Tips For Your Indoor Garden</a>
+            </p>
+            <p class="a-description">
+              You may think that you miss out on gardening when you live... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/tips-for-your-indoor-garden/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-370x247.png" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/spring-cleaning-your-life/">Spring Cleaning Your Life</a>
+            </p>
+            <p class="a-description">
+              Making changes to our daily schedules and changing old habits can be... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/spring-cleaning-your-life/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/pexels-timur-weber-9185814-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/getting-organized-spring-edition/">Getting Organized – Spring Edition</a>
+            </p>
+            <p class="a-description">
+              It’s Spring, and that means one thing… It’s Spring-cleaning time! Something is... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/getting-organized-spring-edition/">READ MORE</a>
+            </p>
+          </article>
+        </div>   
+        <div class="post">
+          <article>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-370x247.jpg" />
+            </a>
+            <p class="a-title">
+              <a href="https://livingat300main.ca/spring-towards-a-better-smelling-home-and-a-better-you/">Spring towards a better smelling home – and a better you</a>
+            </p>
+            <p class="a-description">
+              Our mood and energy levels can be impacted greatly by how our... 
+            </p>
+            <p class="readmore">
+              <a href="https://livingat300main.ca/spring-towards-a-better-smelling-home-and-a-better-you/">READ MORE</a>
+            </p>
+          </article>
+        </div>
+        <style>
+          .load-more {
+            flex-basis: 100%;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            position: relative;
+          }
+          .load-more div {
+            text-align: center;
+          }
+          .load-more a {
+            display: inline-block;
+            background-color: rgb(24, 24, 30);
+            font-size: 11px;
+            font-weight: 700;
+            height: 50px;
+            line-height: 50px;
+            color: white;
+            border-radius: 180px;
+            font-family: 'Open Sans', sans-serif;
+            padding-left: 90px;
+            padding-right: 90px;
+          }
+          .load-more a:hover {box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+        </style>
+        <div class="load-more">
+          <div>
+            <a>LOAD MORE</a>
+          </div>
+        </div> 
+    </div>
+
+    ${fn.include("include/right_side_info")}
+
+  </div>

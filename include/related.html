@@ -1,0 +1,156 @@
+<style>
+    .related_mask_img {
+        display: block;
+        overflow: hidden;
+    }
+    .related_mask_img img {
+        width: 100%;
+        height: auto;
+        transition: transform 1s;
+    }
+
+    .related_mask_img img:hover {
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+
+
+    .related_posts_head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related_posts_head div {
+        color: rgb(17,17,17);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .related_posts_body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .related_posts_body > div {
+        flex-basis: 100%;
+    }
+
+    @media screen and (min-width: 480px) {
+        .related_posts_body > div {
+            flex-basis: 47%;
+        }
+        .related_posts_body {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .related_posts_head {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .related_posts_body > div {
+            flex-basis: 22%;
+        }
+    }
+
+    .related_posts_body a,time {
+        color: rgb(136,136,136);
+        font-size: 12px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+    .related_posts_body > div > p > a {
+        color: rgb(17,17,17);
+        font-size: 15px;
+        font-family: 'Playfair Display', sans-serif;
+        line-height: 18px;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+</style>
+<div class="related_posts">
+
+    <div class="related_posts_head">
+        <div class="title">Related</div>
+        <div class="buttons">
+            <i class="fa-regular fa-arrow-left"></i>
+            {# <i class="fa-solid fa-angle-left"></i> #}
+            <i class="fa-regular fa-arrow-right"></i>
+            {# <i class="fa-solid fa-angle-right"></i> #}
+        </div>
+    </div>
+
+    <div class="related_posts_body">
+
+        <div>
+            <a href="https://livingat300main.ca/summer-smoothies/" class="related_mask_img">
+                <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-293x293.png">
+            </a>
+            <div class="related_mask_img_tags">
+                <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp; Restaurants</a>
+                <span class="separator">·</span>
+                <time datetime="2022-08-17T20:56:50+00:00">August 17, 2022</time>
+            </div>
+            <p>
+                <a href="https://livingat300main.ca/summer-smoothies/">Summer Smoothies</a>
+            </p>
+        </div>
+
+        <div>
+            <a href="https://livingat300main.ca/top-10-summer-cocktails/" class="related_mask_img">
+                <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-293x293.jpg">
+            </a>
+            <div class="related_mask_img_tags">
+                <a href="https://livingat300main.ca/category/food-restaurants/">Food &amp; Restaurants</a>
+                <a href="https://livingat300main.ca/category/lifestyle/">Lifestyle</a>
+                <span class="separator">·</span>
+                <time datetime="2022-07-13T20:44:24+00:00">July 13, 2022</time>
+            </div>
+            <p>
+                <a href="https://livingat300main.ca/top-10-summer-cocktails/">Top 10 Summer Cocktails</a>
+            </p>
+        </div>
+
+        <div>
+            <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/" class="related_mask_img">
+                <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-293x293.png">
+            </a>
+            <div class="related_mask_img_tags">
+                <a href="https://livingat300main.ca/category/adventure/">Adventure</a>
+                <a href="https://livingat300main.ca/category/lifestyle/">Lifestyle</a>
+                <span class="separator">·</span>
+                <time datetime="2022-05-06T18:51:12+00:00">May 6, 2022</time>
+            </div>
+            <p>
+                <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/">Spring Getaways in
+                    Manitoba</a>
+            </p>
+        </div>
+
+        <div>
+            <a href="https://livingat300main.ca/spring-cleaning-your-life/" class="related_mask_img">
+                <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-293x293.png">
+            </a>
+            <div class="related_mask_img_tags">
+                <a href="https://livingat300main.ca/category/lifestyle/">Lifestyle</a>
+                <span class="separator">·</span>
+                <time datetime="2022-03-31T15:00:02+00:00">March 31, 2022</time>
+            </div>
+            <p>
+                <a href="https://livingat300main.ca/spring-cleaning-your-life/">Spring Cleaning Your Life</a>
+            </p>
+        </div>
+
+    </div>
+</div>

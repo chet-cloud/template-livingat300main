@@ -1,0 +1,170 @@
+<style>
+    
+    .img-board * {
+      border: 0px red solid;
+    }
+
+    .img-board {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .img-board .a{
+      flex-basis: 100%;
+    }
+
+    .img-board .b{
+      flex-basis: 100%;
+    }
+
+    .img-board .c{
+    }
+
+    .img-board .d{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .img-board .d div{
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+      .img-board {
+        flex-direction: row;
+      }
+    }
+
+    
+
+
+    .textOnImage {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .textOnImage img {
+      width: 100%;
+      height: 100%;
+      transition: transform 1s;
+    }
+
+    /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_zoom_hover */
+    .textOnImage img:hover {
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
+    }
+
+    .textOnImage a,time, .separator {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .textOnImage .text-content {
+      position: absolute;
+      bottom: 0;
+      
+    }
+
+    .textOnImage .text-content p:first-child {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .textOnImage .text-content p:nth-child(2) {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+    }
+
+  </style>
+  <div class="img-board">
+    <div class="a"> 
+
+      <div class="textOnImage">
+        <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">
+          <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/garden3-900x900.jpg" >
+        </a>
+        <div class="text-content">
+          <p>
+            <a href="https://livingat300main.ca/category/apartment-hacks/" class="cat">Apartment Hacks</a>
+            <span class="separator">·</span>
+            <span class="date"><time class="entry-date published dateCreated" datetime="2022-09-09T19:22:44+00:00">September 9, 2022</time></span>
+          </p>
+          <p>
+            <a href="https://livingat300main.ca/space-ideas-for-small-gardens/">Space Ideas for Small Gardens</a>
+          </p>
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="b">
+      <div class="c">
+
+        <div class="textOnImage">
+          <a href="https://livingat300main.ca/300-main-pup-patio-at-manyfest/">
+            <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/09/pup-6317bb23b019c-585x293.jpg" >
+          </a>
+          <div class="text-content">
+            <p>
+              <a href="https://livingat300main.ca/category/300-main/" class="cat">300 Main</a>
+              <span class="separator">·</span>
+              <span class="date"><time class="entry-date published dateCreated" datetime="2022-09-06T21:27:30+00:00">September 6, 2022</time></span>
+            </p>
+            <p>
+              <a href="https://livingat300main.ca/300-main-pup-patio-at-manyfest/">300 Main Pup Patio at Manyfest</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="d">
+        <div>
+
+          <div class="textOnImage">
+            <a href="https://livingat300main.ca/summer-smoothies/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-390x390.png" >
+            </a>
+            <div class="text-content">
+              <p>
+                <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp; Restaurants</a>
+                <span class="separator">·</span>
+                <span class="date"><time class="entry-date published dateCreated" datetime="2022-09-06T21:27:30+00:00">September 6, 2022</time></span>
+              </p>
+              <p>
+                <a href="https://livingat300main.ca/300-main-pup-patio-at-manyfest/">300 Main Pup Patio at Manyfest</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div>
+
+          <div class="textOnImage">
+            <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">
+              <img src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/275864305_497564391750898_2848710138243712305_n-390x390.jpg" >
+            </a>
+            <div class="text-content">
+              <p>
+                <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp; Restaurants</a>
+                <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                <span class="separator">·</span>
+                <span class="date"><time class="entry-date published dateCreated" datetime="2022-09-06T21:27:30+00:00">September 6, 2022</time></span>
+              </p>
+              <p>
+                <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">Top 5 Food &amp; Drink Spots in Winnipeg this Summer</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
