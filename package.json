@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index.js",
+    "watch": "nodemon --watch pages --watch include --watch lib --watch public -e 'html,js,css,png,jpeg'  npm run build",
+    "serve": "npx http-server out"
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +16,13 @@
     "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
     "require-from-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "npm-watch": "^0.11.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["test/*", "out/*"],
+    "delay": 2500
   }
 }
