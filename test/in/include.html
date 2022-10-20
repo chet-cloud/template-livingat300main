@@ -1,0 +1,17 @@
+---
+layout: test/in/_base
+---
+my id is ${data.id}
+<script server="true">
+    module.exports = function(){
+        return {id:2}
+    }
+</script>
+
+== this is the include file
+${fn.include("test/in/_fragment","ccccccccc")}
+
+
+
+++ this is another include file
+${fn.apply("test/in/_fragment",["cc","ff"])}
