@@ -3,8 +3,8 @@ layout: test/in/_base
 ---
 my id is ${data.id}
 <script server="true">
-    module.exports = function(){
-        return {id:2}
+    module.exports = function(data){
+        return {...data,id:2}
     }
 </script>
 
@@ -14,4 +14,4 @@ ${fn.include("test/in/_fragment","ccccccccc")}
 
 
 ++ this is another include file
-${fn.apply("test/in/_fragment",["cc","ff"])}
+${fn.map("test/in/_fragment",["cc","ff"])}
