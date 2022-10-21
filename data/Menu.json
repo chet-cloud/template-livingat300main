@@ -1,0 +1,9 @@
+[
+    {"name":"Home","url":"/"},
+    {"name":"Lifestyle","url":"/Lifestyle"},
+    {"name":"Culture","url":"/Culture"},
+    {"name":"Art & Photography","url":"/Art_Photography"},
+    {"name":"Environment","url":"/Environment"},
+    {"name":"Shopping","url":"/Shopping"},
+    {"name":"Events","url":"/Events"}
+]
