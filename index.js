@@ -1,10 +1,10 @@
 const generator = require("./lib/generator.js")
 const fse = require('fs-extra')
-const {loadPosts} = require("./lib/data.js")
+const {loadPosts,loadCategories} = require("./lib/data.js")
 
 //divide posts to small files for chrome request
-const all_posts = loadPosts()
-all_posts.reduce((context,v,i)=>{
+
+loadPosts().reduce((context,v,i)=>{
     context.push(v)
     if((i+1)%8 === 0){
         fse.outputFileSync(`./out/data/posts.${Math.floor(i/8)}.json`,JSON.stringify({data:context}))
@@ -12,6 +12,29 @@ all_posts.reduce((context,v,i)=>{
     }
     return context
 },[])
+
+const cat = loadPosts().reduce((context,v)=>{
+    const index = context.ids.findIndex(id=>{
+        return v.categories.findIndex(i=>i===id) > 0
+    })
+    if(index > 0 ){
+        if(context.arr[v.id] === undefined){
+            context.arr[v.id] = []
+        }
+        context.arr[v.id].push(v)
+    }
+    return context;
+},{
+    ids:[...loadCategories().map(i=>i.id)],
+    arr:{}
+})
+
+var key;
+for (key in cat.arr) {
+    if (cat.arr.hasOwnProperty(key)) {
+        fse.outputFileSync(`./out/data/category.${key}.json`,JSON.stringify(cat.arr[key]))
+    }
+}
 
 
 generator("pages","out","public")
