@@ -1,0 +1,45 @@
+<script>
+    module.exports = function(){
+        const {cat} = require('./lib/utils.js')
+        const fse = require('fs-extra')
+        fse.outputFileSync("./out/include/index_request_posts.js",cat("include/index_request_posts.js"))
+        return {}
+    }
+</script>
+
+<script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
+<script type='text/javascript' src='/include/index_request_posts.js'></script>
+<script type="text/javascript">
+    function load_more_posts(i){
+        fetch("data/posts."+i+".json").then(r=>r.json()).then(({data})=>{
+            console.log(data.length)
+            const htm = index_request_posts(data)
+            document.querySelector("#index_center_post").insertAdjacentHTML('beforeend', htm)
+        })
+    }
+    let i=1;
+    document.addEventListener("DOMContentLoaded", function(event) {
+            MockRequests.configureDynamicResponses({
+                // Load more, load in categories
+                '/wp-json/codetipi-zeen/v1/block': {
+                    usePathnameForAllQueries: true,
+                    response: {},
+                    dynamicResponseModFn: (request, response, queryParamMap) => {
+                        load_more_posts(i++)
+                        return response;
+                    },
+                    usePathnameForAllQueries: true
+                },
+                //search  https://livingat300main.ca/wp-json/codetipi-zeen/v1/s?kw=aa&ppp=3
+                '/wp-json/codetipi-zeen/v1/s': {
+                    usePathnameForAllQueries: true,
+                    response: {},
+                    dynamicResponseModFn: (request, response, queryParamMap) => {
+                        console.log(queryParamMap)
+                        return response;
+                    },
+                }
+            })
+
+    });
+  </script>
