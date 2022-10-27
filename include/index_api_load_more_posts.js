@@ -70,3 +70,12 @@ try{ // void error in browser
 }catch(e){}
 
 
+
+//for browser
+async function load_more_posts(i){
+    return await fetch("data/posts."+i+".json").then(r=>r.json()).then(({data})=>{
+        const htm = index_request_posts(data)
+        return [15,htm]
+        //document.querySelector("#index_center_post").insertAdjacentHTML('beforeend', htm)
+    })
+}

@@ -22,8 +22,9 @@
 		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"/#website","url":"/","name":"Living at 300 Main Downtown Winnipeg","description":"Featuring articles on simplicity, design, the arts, social happenings, and great food, “Living at 300 Main,” will show you a glimpse of your new downtown Winnipeg luxury apartment lifestyle.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"/#webpage","url":"/","name":"Home - Living at 300 Main Downtown Winnipeg","isPartOf":{"@id":"/#website"},"datePublished":"2019-03-15T19:59:42+00:00","dateModified":"2019-03-15T20:49:24+00:00","breadcrumb":{"@id":"/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["/"]}]},{"@type":"BreadcrumbList","@id":"/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
 	<meta name="google-site-verification" content="4tqhsfSg8ObhKgiDGzOVvFKf2QBxvD4aKtwP6s-rgAk" />
 	<!-- / Yoast SEO plugin. -->
-
-	${fn.include("include/index_request")}
+	
+	<script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
+	${fn.include("include/index_api")}
 
 	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 	<link rel='dns-prefetch' href='//s.w.org' />
@@ -1363,7 +1364,7 @@
 								<div class="tipi-row-inner-style clearfix">
 									<div class="tipi-row-inner-box contents tipi-row">
 										<div class="block block-25 tipi-flex meta-overlay-0">
-											${fn.include("include/index_top_2")} 
+											${fn.include("include/index_top_2")}
 										</div>
 									</div>
 								</div>
@@ -1386,7 +1387,8 @@
 													</div>
 													<div class="filters tipi-flex font-2"></div>
 												</div>
-												<div id='index_center_post' class="block block-42 tipi-flex meta-overlay-0">
+												<div id='index_center_post'
+													class="block block-42 tipi-flex meta-overlay-0">
 													${fn.include("include/index_center_post")}
 												</div>
 												<div class="load-more-wrap load-more-size-2 load-more-wrap-1"><span
@@ -2352,13 +2354,16 @@
 										<ul id="menu-footer" class="footer-menu horizontal-menu">
 											<li id="menu-item-269"
 												class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-269">
-												<a href="/about/">About this Site</a></li>
+												<a href="/about/">About this Site</a>
+											</li>
 											<li id="menu-item-283"
 												class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-283">
-												<a href="/be-a-contributor/">Be a Contributor</a></li>
+												<a href="/be-a-contributor/">Be a Contributor</a>
+											</li>
 											<li id="menu-item-271"
 												class="menu-item menu-item-type-custom menu-item-object-custom dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-271">
-												<a href="http://300main.ca">300 Main Apartments</a></li>
+												<a href="http://300main.ca">300 Main Apartments</a>
+											</li>
 										</ul>
 									</nav><!-- .footer-navigation -->
 									<div class="to-top to-top-1 font-2"><a href="#" id="to-top"
@@ -2383,25 +2388,32 @@
 						<ul id="menu-mobile" class="menu-mobile vertical-menu font-s">
 							<li
 								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-101">
-								<a href="/" aria-current="page">Home</a></li>
+								<a href="/" aria-current="page">Home</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-395">
-								<a href="/category/lifestyle/">Lifestyle</a></li>
+								<a href="/category/lifestyle/">Lifestyle</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-393">
-								<a href="/category/culture/">Culture</a></li>
+								<a href="/category/culture/">Culture</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-262">
-								<a href="/category/art-photography/">Art &#038; Photography</a></li>
+								<a href="/category/art-photography/">Art &#038; Photography</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-394">
-								<a href="/category/environment/">Environment</a></li>
+								<a href="/category/environment/">Environment</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-396">
-								<a href="/category/shopping/">Shopping</a></li>
+								<a href="/category/shopping/">Shopping</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-1332">
-								<a href="/events/">Events</a></li>
+								<a href="/events/">Events</a>
+							</li>
 						</ul>
 					</nav><!-- .mobile-navigation -->
 					<ul class="menu-icons horizontal-menu">

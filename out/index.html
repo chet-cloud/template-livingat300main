@@ -21,73 +21,43 @@
 	
 	<meta name="google-site-verification" content="4tqhsfSg8ObhKgiDGzOVvFKf2QBxvD4aKtwP6s-rgAk" />
 	<!-- / Yoast SEO plugin. -->
-
+	
+	<script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
 	
 
-<script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
-<script type='text/javascript' src='/include/index_request_posts.js'></script>
-<script type='text/javascript' src='/include/index_top_menu_article.js'></script>
-<script type="text/javascript">
-    async function load_more_posts(i){
-        return await fetch("data/posts."+i+".json").then(r=>r.json()).then(({data})=>{
-            const htm = index_request_posts(data)
-            return [15,htm]
-            //document.querySelector("#index_center_post").insertAdjacentHTML('beforeend', htm)
-        })
-    }
-    const cache = {}
-    function set_posts_in_category(data,index,category_id){
-        const result =  data.filter((post,i) => { return (3*index <= i) && (3*index + 2 >= i)} ).map(p=> {
-            return {
-                image_url:p.yoast_head_json.og_image[0].url,
-                url:p.link,
-                title:p.title.rendered
-            }
-        })
-        const htm = index_top_menu_article(result)
-        return [data.length,htm]
-    }
-    async function get_posts_in_category(category_id, index){
-        if(cache.hasOwnProperty(category_id)){
-            const data = cache[category_id]
-            return set_posts_in_category(data,index,category_id)
-        }else{
-            return await fetch("data/category."+category_id+".json").then(r=>r.json()).then((data)=>{
-                cache[category_id] = data
-                return set_posts_in_category(data,index,category_id)
-            })
-        }
-    }
-    document.addEventListener("DOMContentLoaded", function(event) {
-            MockRequests.configureDynamicResponses({
-                // Load more, load in categories
-                '/wp-json/codetipi-zeen/v1/block': {
-                    usePathnameForAllQueries: true,
-                    response: {},
-                    dynamicResponseModFn: async (request, response, queryParamMap) => {
-                        const type = queryParamMap["type"]
-                        const paged = queryParamMap["paged"]
-                        console.log(queryParamMap)
-                        if(type ==="1"){
-                            return load_more_posts(paged)
-                        }else if(type ==="2"){
-                            return await get_posts_in_category(queryParamMap['data[args][cat]'], paged)
-                        }
-                    },
-                },
-                //search  https://livingat300main.ca/wp-json/codetipi-zeen/v1/s?kw=aa&ppp=3
-                '/wp-json/codetipi-zeen/v1/s': {
-                    usePathnameForAllQueries: true,
-                    response: {},
-                    dynamicResponseModFn: (request, response, queryParamMap) => {
-                        console.log(queryParamMap)
-                        return response;
-                    },
-                }
-            })
+<script type='text/javascript' src='/include/index_api_load_more_posts.js'></script>
+<script type='text/javascript' src='/include/index_api_get_menu.js'></script>
 
-    });
-  </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+        MockRequests.setDynamicMockUrlResponse('/wp-json/codetipi-zeen/v1/block',{
+            usePathnameForAllQueries: true,
+            response: {},
+            dynamicResponseModFn: async (request, response, queryParamMap) => {
+                const type = queryParamMap["type"]
+                const paged = queryParamMap["paged"]
+                console.log(queryParamMap)
+                if(type ==="1"){
+                    return load_more_posts(paged)
+                }else if(type ==="2"){
+                    return await get_posts_in_category(queryParamMap['data[args][cat]'], paged)
+                }
+            },
+        })
+    })
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+        MockRequests.setDynamicMockUrlResponse('/wp-json/codetipi-zeen/v1/s',{
+            usePathnameForAllQueries: true,
+            response: {},
+            dynamicResponseModFn: (request, response, queryParamMap) => {
+                console.log(queryParamMap)
+                return response;
+            },
+        })
+    })
+</script>
 
 	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 	<link rel='dns-prefetch' href='//s.w.org' />
@@ -2127,7 +2097,7 @@
                 </div>
             </div>
         </article>
- 
+
 										</div>
 									</div>
 								</div>
@@ -2150,7 +2120,8 @@
 													</div>
 													<div class="filters tipi-flex font-2"></div>
 												</div>
-												<div id='index_center_post' class="block block-42 tipi-flex meta-overlay-0">
+												<div id='index_center_post'
+													class="block block-42 tipi-flex meta-overlay-0">
 													
 
         <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border separation-border-style loop-0 preview-classic preview-21 img-ani-1 elements-design-1 post-10477 post type-post status-publish format-standard has-post-thumbnail hentry category-300-main category-art-photography category-downtown-events category-exchange-district-events tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-bike-in-winnioeg tag-bike-tour-in-winnipeg tag-downtown-apartments tag-downtown-winnipeg tag-nuit-blanche-winnipeg tag-winnipeg-apartments article-window">
@@ -3323,13 +3294,16 @@ Shine some sun on your winter blues by checking one of the gardens to...
 										<ul id="menu-footer" class="footer-menu horizontal-menu">
 											<li id="menu-item-269"
 												class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-269">
-												<a href="/about/">About this Site</a></li>
+												<a href="/about/">About this Site</a>
+											</li>
 											<li id="menu-item-283"
 												class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-283">
-												<a href="/be-a-contributor/">Be a Contributor</a></li>
+												<a href="/be-a-contributor/">Be a Contributor</a>
+											</li>
 											<li id="menu-item-271"
 												class="menu-item menu-item-type-custom menu-item-object-custom dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-271">
-												<a href="http://300main.ca">300 Main Apartments</a></li>
+												<a href="http://300main.ca">300 Main Apartments</a>
+											</li>
 										</ul>
 									</nav><!-- .footer-navigation -->
 									<div class="to-top to-top-1 font-2"><a href="#" id="to-top"
@@ -3354,25 +3328,32 @@ Shine some sun on your winter blues by checking one of the gardens to...
 						<ul id="menu-mobile" class="menu-mobile vertical-menu font-s">
 							<li
 								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-101">
-								<a href="/" aria-current="page">Home</a></li>
+								<a href="/" aria-current="page">Home</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-395">
-								<a href="/category/lifestyle/">Lifestyle</a></li>
+								<a href="/category/lifestyle/">Lifestyle</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-393">
-								<a href="/category/culture/">Culture</a></li>
+								<a href="/category/culture/">Culture</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-262">
-								<a href="/category/art-photography/">Art &#038; Photography</a></li>
+								<a href="/category/art-photography/">Art &#038; Photography</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-394">
-								<a href="/category/environment/">Environment</a></li>
+								<a href="/category/environment/">Environment</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-taxonomy menu-item-object-category dropper standard-drop mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-396">
-								<a href="/category/shopping/">Shopping</a></li>
+								<a href="/category/shopping/">Shopping</a>
+							</li>
 							<li
 								class="menu-item menu-item-type-post_type menu-item-object-page dropper standard-drop mm-art mm-wrap-2 mm-wrap menu-item-1332">
-								<a href="/events/">Events</a></li>
+								<a href="/events/">Events</a>
+							</li>
 						</ul>
 					</nav><!-- .mobile-navigation -->
 					<ul class="menu-icons horizontal-menu">

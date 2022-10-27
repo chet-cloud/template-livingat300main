@@ -64,9 +64,34 @@ function index_top_menu_article(posts) {
 
 }
 
-
 try{ // void error in browser
     module.exports = index_top_menu_article
 }catch(e){}
 
 
+// for browser
+
+const cache = {}
+function set_posts_in_category(data,index,category_id){
+    const result =  data.filter((post,i) => { return (3*index <= i) && (3*index + 2 >= i)} ).map(p=> {
+        return {
+            image_url:p.yoast_head_json.og_image[0].url,
+            url:p.link,
+            title:p.title.rendered
+        }
+    })
+    const htm = index_top_menu_article(result)
+    return [data.length,htm]
+}
+
+async function get_posts_in_category(category_id, index){
+    if(cache.hasOwnProperty(category_id)){
+        const data = cache[category_id]
+        return set_posts_in_category(data,index,category_id)
+    }else{
+        return await fetch("data/category."+category_id+".json").then(r=>r.json()).then((data)=>{
+            cache[category_id] = data
+            return set_posts_in_category(data,index,category_id)
+        })
+    }
+}
