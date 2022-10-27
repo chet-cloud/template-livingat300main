@@ -1,0 +1,189 @@
+<script>
+    module.exports = function () {
+        const article_template = require('./include/index_top_menu_article.js')
+        const {getPostByCategoryId} = require('./lib/data.js')
+        function get_latest_post_by_category(category_id){
+            const data = getPostByCategoryId(category_id,3)
+            //const data = getJSONSync(`./out/data/category.${category_id}.json`)
+            return data.map(p=> {
+                return {
+                    image_url:p.yoast_head_json.og_image[0].url,
+                    url:p.link,
+                    title:p.title.rendered
+                }
+            })
+        }
+
+        const article_template_container = () => `
+
+        <li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home dropper drop-it mm-art mm-wrap-2 mm-wrap menu-item-101">
+            <a href="https://livingat300main.ca/">Home</a>
+        </li>
+        <li id="menu-item-395" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-395">
+            <a href="https://livingat300main.ca/category/lifestyle/" data-ppp="3" data-tid="29" data-term="category">Lifestyle</a>
+            <div class="menu mm-11 tipi-row" data-mm="11">
+                <div class="menu-wrap menu-wrap-more-10 tipi-flex">
+                    <div id="block-wrap-395" class="block-wrap block-wrap-61 block-css-395 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="395">
+                        <div class="tipi-row-inner-style clearfix">
+                            <div class="tipi-row-inner-box contents">
+                                <div class="block-title-wrap module-block-title clearfix  block-title-1 with-load-more">
+                                    <div class="block-title-area clearfix">
+                                        <div class="block-title font-1">Lifestyle</div>
+                                    </div>
+                                    <div class="filters tipi-flex font-2">
+                                        <div class="load-more-wrap load-more-size-2 load-more-wrap-2">
+                                            <span data-id="395" class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more" data-dir="1">
+                                                <i class="tipi-i-angle-left" aria-hidden="true"></i>
+                                            </span>
+                                            <span data-id="395" class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2" data-dir="2">
+                                                <i class="tipi-i-angle-right" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-61 tipi-flex preview-review-bot meta-overlay-0">
+                                    ${article_template(get_latest_post_by_category(29))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-393" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-393">
+            <a href="https://livingat300main.ca/category/culture/" data-ppp="3" data-tid="32" data-term="category">Culture</a>
+            <div class="menu mm-11 tipi-row" data-mm="11">
+                <div class="menu-wrap menu-wrap-more-10 tipi-flex">
+                    <div id="block-wrap-393" class="block-wrap block-wrap-61 block-css-393 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="393">
+                        <div class="tipi-row-inner-style clearfix">
+                            <div class="tipi-row-inner-box contents">
+                                <div class="block-title-wrap module-block-title clearfix  block-title-1 with-load-more">
+                                    <div class="block-title-area clearfix">
+                                        <div class="block-title font-1">Culture</div>
+                                    </div>
+                                    <div class="filters tipi-flex font-2">
+                                        <div class="load-more-wrap load-more-size-2 load-more-wrap-2">
+                                            <span data-id="393" class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more" data-dir="1">
+                                                <i class="tipi-i-angle-left" aria-hidden="true"></i>
+                                            </span>
+                                            <span data-id="393" class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2" data-dir="2">
+                                                <i class="tipi-i-angle-right" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-61 tipi-flex preview-review-bot meta-overlay-0">
+                                    ${article_template(get_latest_post_by_category(32))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-262" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-262">
+            <a href="https://livingat300main.ca/category/art-photography/" data-ppp="3" data-tid="27" data-term="category">Art &#038;Photography</a>
+            <div class="menu mm-11 tipi-row" data-mm="11">
+                <div class="menu-wrap menu-wrap-more-10 tipi-flex">
+                    <div id="block-wrap-262" class="block-wrap block-wrap-61 block-css-262 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="262">
+                        <div class="tipi-row-inner-style clearfix">
+                            <div class="tipi-row-inner-box contents">
+                                <div class="block-title-wrap module-block-title clearfix  block-title-1 with-load-more">
+                                    <div class="block-title-area clearfix">
+                                        <div class="block-title font-1">Art &amp;Photography</div>
+                                    </div>
+                                    <div class="filters tipi-flex font-2">
+                                        <div class="load-more-wrap load-more-size-2 load-more-wrap-2">
+                                            <span data-id="262" class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more" data-dir="1">
+                                                <i class="tipi-i-angle-left" aria-hidden="true"></i>
+                                            </span>
+                                            <span data-id="262" class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2" data-dir="2">
+                                                <i class="tipi-i-angle-right" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-61 tipi-flex preview-review-bot meta-overlay-0">
+                                    ${article_template(get_latest_post_by_category(27))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-394" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-394">
+            <a href="https://livingat300main.ca/category/environment/" data-ppp="3" data-tid="31" data-term="category">Environment</a>
+            <div class="menu mm-11 tipi-row" data-mm="11">
+                <div class="menu-wrap menu-wrap-more-10 tipi-flex">
+                    <div id="block-wrap-394" class="block-wrap block-wrap-61 block-css-394 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="394">
+                        <div class="tipi-row-inner-style clearfix">
+                            <div class="tipi-row-inner-box contents">
+                                <div class="block-title-wrap module-block-title clearfix  block-title-1 with-load-more">
+                                    <div class="block-title-area clearfix">
+                                        <div class="block-title font-1">Environment</div>
+                                    </div>
+                                    <div class="filters tipi-flex font-2">
+                                        <div class="load-more-wrap load-more-size-2 load-more-wrap-2">
+                                            <span data-id="394" class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more" data-dir="1">
+                                                <i class="tipi-i-angle-left" aria-hidden="true"></i>
+                                            </span>
+                                            <span data-id="394" class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2" data-dir="2">
+                                                <i class="tipi-i-angle-right" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-61 tipi-flex preview-review-bot meta-overlay-0">
+                                    ${article_template(get_latest_post_by_category(31))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-396" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-396">
+            <a href="https://livingat300main.ca/category/shopping/" data-ppp="3" data-tid="21" data-term="category">Shopping</a>
+            <div class="menu mm-11 tipi-row" data-mm="11">
+                <div class="menu-wrap menu-wrap-more-10 tipi-flex">
+                    <div id="block-wrap-396" class="block-wrap block-wrap-61 block-css-396 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="396">
+                        <div class="tipi-row-inner-style clearfix">
+                            <div class="tipi-row-inner-box contents">
+                                <div class="block-title-wrap module-block-title clearfix  block-title-1 with-load-more">
+                                    <div class="block-title-area clearfix">
+                                        <div class="block-title font-1">Shopping</div>
+                                    </div>
+                                    <div class="filters tipi-flex font-2">
+                                        <div class="load-more-wrap load-more-size-2 load-more-wrap-2">
+                                            <span data-id="396" class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more" data-dir="1">
+                                                <i class="tipi-i-angle-left" aria-hidden="true"></i>
+                                            </span>
+                                            <span data-id="396" class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2" data-dir="2">
+                                                <i class="tipi-i-angle-right" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block block-61 tipi-flex preview-review-bot meta-overlay-0">
+                                    ${article_template(get_latest_post_by_category(21))}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="menu-item-1332" class="menu-item menu-item-type-post_type menu-item-object-page dropper drop-it mm-art mm-wrap-2 mm-wrap menu-item-1332">
+            <a href="https://livingat300main.ca/events/">Events</a>
+        </li>
+
+        `
+
+        const result =  article_template_container()
+
+        return {html: result}
+    }
+</script>
+
+${data.html}

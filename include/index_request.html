@@ -3,32 +3,61 @@
         const {cat} = require('./lib/utils.js')
         const fse = require('fs-extra')
         fse.outputFileSync("./out/include/index_request_posts.js",cat("include/index_request_posts.js"))
+        fse.outputFileSync("./out/include/index_top_menu_article.js",cat("include/index_top_menu_article.js"))
         return {}
     }
 </script>
 
 <script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
 <script type='text/javascript' src='/include/index_request_posts.js'></script>
+<script type='text/javascript' src='/include/index_top_menu_article.js'></script>
 <script type="text/javascript">
-    function load_more_posts(i){
-        fetch("data/posts."+i+".json").then(r=>r.json()).then(({data})=>{
-            console.log(data.length)
+    async function load_more_posts(i){
+        return await fetch("data/posts."+i+".json").then(r=>r.json()).then(({data})=>{
             const htm = index_request_posts(data)
-            document.querySelector("#index_center_post").insertAdjacentHTML('beforeend', htm)
+            return [15,htm]
+            //document.querySelector("#index_center_post").insertAdjacentHTML('beforeend', htm)
         })
     }
-    let i=1;
+    const cache = {}
+    function set_posts_in_category(data,index,category_id){
+        const result =  data.filter((post,i) => { return (3*index <= i) && (3*index + 2 >= i)} ).map(p=> {
+            return {
+                image_url:p.yoast_head_json.og_image[0].url,
+                url:p.link,
+                title:p.title.rendered
+            }
+        })
+        const htm = index_top_menu_article(result)
+        return [data.length,htm]
+    }
+    async function get_posts_in_category(category_id, index){
+        if(cache.hasOwnProperty(category_id)){
+            const data = cache[category_id]
+            return set_posts_in_category(data,index,category_id)
+        }else{
+            return await fetch("data/category."+category_id+".json").then(r=>r.json()).then((data)=>{
+                cache[category_id] = data
+                return set_posts_in_category(data,index,category_id)
+            })
+        }
+    }
     document.addEventListener("DOMContentLoaded", function(event) {
             MockRequests.configureDynamicResponses({
                 // Load more, load in categories
                 '/wp-json/codetipi-zeen/v1/block': {
                     usePathnameForAllQueries: true,
                     response: {},
-                    dynamicResponseModFn: (request, response, queryParamMap) => {
-                        load_more_posts(i++)
-                        return response;
+                    dynamicResponseModFn: async (request, response, queryParamMap) => {
+                        const type = queryParamMap["type"]
+                        const paged = queryParamMap["paged"]
+                        console.log(queryParamMap)
+                        if(type ==="1"){
+                            return load_more_posts(paged)
+                        }else if(type ==="2"){
+                            return await get_posts_in_category(queryParamMap['data[args][cat]'], paged)
+                        }
                     },
-                    usePathnameForAllQueries: true
                 },
                 //search  https://livingat300main.ca/wp-json/codetipi-zeen/v1/s?kw=aa&ppp=3
                 '/wp-json/codetipi-zeen/v1/s': {
