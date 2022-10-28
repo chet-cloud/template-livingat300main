@@ -1,9 +1,9 @@
 <script>
-    module.exports = function(){
-        const {getLastedPost} = require('./lib/data.js')
-        const post_data = getLastedPost(1)
-        return post_data
-    }
+	module.exports = function () {
+		const { getLastedPost,loadPosts } = require('./lib/data.js')
+		const post_data = getLastedPost(10) //loadPosts()
+		return post_data
+	}
 </script>
 
 <!DOCTYPE html>
@@ -29,8 +29,7 @@
 	<meta property="og:site_name" content="Living at 300 Main Downtown Winnipeg" />
 	<meta property="article:published_time" content="2022-05-27T15:00:00+00:00" />
 	<meta property="article:modified_time" content="2022-05-19T20:17:01+00:00" />
-	<meta property="og:image"
-		content="wp-content/uploads/2022/05/pexels-pixabay-158636-1.jpg" />
+	<meta property="og:image" content="wp-content/uploads/2022/05/pexels-pixabay-158636-1.jpg" />
 	<meta property="og:image:width" content="1053" />
 	<meta property="og:image:height" content="702" />
 	<meta property="og:image:type" content="image/jpeg" />
@@ -74,9 +73,8 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel='stylesheet' id='wp-block-library-css'
-		href='wp-includes/css/dist/block-library/style.min.css?ver=6.0.3' type='text/css'
-		media='all' />
+	<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3'
+		type='text/css' media='all' />
 	<style id='global-styles-inline-css' type='text/css'>
 		body {
 			--wp--preset--color--black: #000000;
@@ -326,41 +324,34 @@
 		}
 	</style>
 	<link rel='stylesheet' id='lets-review-css'
-		href='wp-content/plugins/lets-review/frontend/css/lets-review-style.min.css?ver=2.5.6'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='lets-social-count-css'
-		href='wp-content/plugins/lets-social-count/assets/css/style.css?ver=1.0.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='widgetopts-styles-css'
-		href='wp-content/plugins/widget-options/assets/css/widget-options.css'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='font-awesome-css'
-		href='wp-content/plugins/wp-event-aggregator/assets/css/font-awesome.min.css?ver=6.0.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='wp-event-aggregator-front-css'
-		href='wp-content/plugins/wp-event-aggregator/assets/css/wp-event-aggregator.css?ver=6.0.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='ppress-frontend-css'
-		href='wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.3.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='ppress-flatpickr-css'
-		href='wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.3.0'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='ppress-select2-css'
-		href='wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.0.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='lets-info-up-css'
-		href='wp-content/plugins/lets-info-up/frontend/css/style.min.css?ver=1.0.3'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='lets-live-blog-css'
-		href='wp-content/plugins/lets-live-blog/frontend/css/style.min.css?ver=1.0.2'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='lets-live-blog-icons-css'
-		href='wp-content/plugins/lets-live-blog/frontend/css/fonts/style.css?ver=1.0.2'
-		type='text/css' media='all' />
-	<link rel='stylesheet' id='zeen-style-css'
-		href='wp-content/themes/zeen/assets/css/style.min.css?ver=1.4' type='text/css'
+		href='/wp-content/plugins/lets-review/frontend/css/lets-review-style.min.css?ver=2.5.6' type='text/css'
 		media='all' />
+	<link rel='stylesheet' id='lets-social-count-css'
+		href='/wp-content/plugins/lets-social-count/assets/css/style.css?ver=1.0.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='widgetopts-styles-css'
+		href='/wp-content/plugins/widget-options/assets/css/widget-options.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='font-awesome-css'
+		href='/wp-content/plugins/wp-event-aggregator/assets/css/font-awesome.min.css?ver=6.0.3' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='wp-event-aggregator-front-css'
+		href='/wp-content/plugins/wp-event-aggregator/assets/css/wp-event-aggregator.css?ver=6.0.3' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='ppress-frontend-css'
+		href='/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.3.0' type='text/css' media='all' />
+	<link rel='stylesheet' id='ppress-flatpickr-css'
+		href='/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.3.0' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='ppress-select2-css'
+		href='/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.0.3' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='lets-info-up-css'
+		href='/wp-content/plugins/lets-info-up/frontend/css/style.min.css?ver=1.0.3' type='text/css' media='all' />
+	<link rel='stylesheet' id='lets-live-blog-css'
+		href='/wp-content/plugins/lets-live-blog/frontend/css/style.min.css?ver=1.0.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='lets-live-blog-icons-css'
+		href='/wp-content/plugins/lets-live-blog/frontend/css/fonts/style.css?ver=1.0.2' type='text/css' media='all' />
+	<link rel='stylesheet' id='zeen-style-css' href='/wp-content/themes/zeen/assets/css/style.min.css?ver=1.4'
+		type='text/css' media='all' />
 	<style id='zeen-style-inline-css' type='text/css'>
 		.content-bg,
 		.article-layout-skin-1.title-cut-bl .hero-wrap .meta:before,
@@ -1106,48 +1097,39 @@
 			background-image: url(wp-content/uploads/2021/12/Untitled-2.jpg);
 		}
 	</style>
-	<link rel='stylesheet' id='zeen-child-style-css'
-		href='wp-content/themes/zeen-child/style.css?ver=6.0.3' type='text/css'
-		media='all' />
+	<link rel='stylesheet' id='zeen-child-style-css' href='/wp-content/themes/zeen-child/style.css?ver=6.0.3'
+		type='text/css' media='all' />
 	<link rel='stylesheet' id='zeen-fonts-css'
 		href='https://fonts.googleapis.com/css?family=Playfair+Display%3A700%2Citalic%2C400%7COpen+Sans%3A400%2C700%7CMontserrat%3A400%2C700&#038;ver=6.0.3#038;subset=latin'
 		type='text/css' media='all' />
 	<link rel='stylesheet' id='login-with-ajax-css'
-		href='wp-content/plugins/login-with-ajax/templates/widget.css?ver=4.1'
-		type='text/css' media='all' />
-	<script type='text/javascript' src='wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
-		id='jquery-core-js'></script>
-	<script type='text/javascript'
-		src='wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+		href='/wp-content/plugins/login-with-ajax/templates/widget.css?ver=4.1' type='text/css' media='all' />
+	<script type='text/javascript' src='/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+	<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
 		id='jquery-migrate-js'></script>
-	<script type='text/javascript'
-		src='wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.3.0'
+	<script type='text/javascript' src='/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.3.0'
 		id='ppress-flatpickr-js'></script>
-	<script type='text/javascript'
-		src='wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.3.0'
+	<script type='text/javascript' src='/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.3.0'
 		id='ppress-select2-js'></script>
 	<!--[if IE]>
-<script type='text/javascript' src='wp-content/themes/zeen/assets/js/ie.js?ver=1.4' id='zeen-ie-js'></script>
+<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/ie.js?ver=1.4' id='zeen-ie-js'></script>
 <![endif]-->
 	<!--[if lt IE 10]>
-<script type='text/javascript' src='wp-content/themes/zeen/assets/js/ie9.js?ver=1.4' id='zeen-ie9-js'></script>
+<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/ie9.js?ver=1.4' id='zeen-ie9-js'></script>
 <![endif]-->
 	<script type='text/javascript' id='login-with-ajax-js-extra'>
 		/* <![CDATA[ */
 		var LWA = { "ajaxurl": "https:\/\/livingat300main.ca\/wp-admin\/admin-ajax.php", "off": "" };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/plugins/login-with-ajax/login-with-ajax.js?ver=4.1'
+	<script type='text/javascript' src='/wp-content/themes/zeen/plugins/login-with-ajax/login-with-ajax.js?ver=4.1'
 		id='login-with-ajax-js'></script>
-	<script type='text/javascript'
-		src='wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.5.4'
+	<script type='text/javascript' src='/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.5.4'
 		id='ga-external-tracking-js'></script>
 	<link rel="https://api.w.org/" href="wp-json/" />
 	<link rel="alternate" type="application/json" href="wp-json/wp/v2/posts/9920" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
-	<link rel="wlwmanifest" type="application/wlwmanifest+xml"
-		href="wp-includes/wlwmanifest.xml" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 
 	<link rel='shortlink' href='?p=9920' />
 	<link rel="alternate" type="application/json+oembed"
@@ -1353,10 +1335,8 @@
 							<div class="meta-wrap hero-meta tipi-xl-typo elements-design-1 clearfix tipi-row">
 								<div class="meta  tipi-xs-12 tipi-m-8">
 									<div class="byline byline-2 byline-cats-design-1">
-										<div class="byline-part cats"><a
-												href="category/adventure/"
-												class="cat">Adventure</a><a
-												href="category/travel/"
+										<div class="byline-part cats"><a href="category/adventure/"
+												class="cat">Adventure</a><a href="category/travel/"
 												class="cat">Travel</a></div><span
 											class="byline-part separator">&middot;</span><span
 											class="byline-part date"><time class="entry-date published dateCreated"
@@ -1376,406 +1356,423 @@
 										<div class="entry-content-wrap clearfix">
 											<div class="entry-content body-color clearfix link-color-wrap">
 												${data.content.rendered}
-											<!-- .entry-content -->
-										</div><!-- .entry-content -->
+												<!-- .entry-content -->
+											</div><!-- .entry-content -->
 
-										<footer class="entry-footer">
-											<div class="post-tags clearfix"><a
-													href="tag/assiniboine-park/"
-													rel="tag">Assiniboine Park</a><a
-													href="tag/downtown-winnipeg/"
-													rel="tag">Downtown Winnipeg</a><a
-													href="tag/gardens-in-winnipeg/"
-													rel="tag">Gardens in Winnipeg</a><a
-													href="tag/living-in-downtown-winnipeg/"
-													rel="tag">Living in Downtown Winnipeg</a><a
-													href="tag/rooftop-at-the-wag/"
-													rel="tag">Rooftop at the Wag</a><a
-													href="tag/spring/" rel="tag">Spring</a><a
-													href="tag/spring-in-winnipeg/"
-													rel="tag">Spring in Winnipeg</a><a
-													href="tag/zen-garden/" rel="tag">Zen
-													Garden</a></div>
-											<div
-												class="share-it share-it-1 share-it-bold share-it-count-0 share-it-after tipi-flex">
-												<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
-													class="tipi-tip tipi-tip-move share-button share-button-fb"
-													data-title="Share" target="_blank"><span
-														class="share-button-content tipi-vertical-c"><i
-															class="tipi-i-facebook"></i></span></a><a
-													href="https://twitter.com/intent/tweet?text=Gardens%20to%20Visit%20in%20Winnipeg%20-%20https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
-													class="tipi-tip tipi-tip-move share-button share-button-tw"
-													data-title="Tweet" target="_blank"><span
-														class="share-button-content tipi-vertical-c"><i
-															class="tipi-i-twitter"></i></span></a><a
-													href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
-													class="tipi-tip tipi-tip-move share-button share-button-pin"
-													data-title="Pin" target="_blank"><span
-														class="share-button-content tipi-vertical-c"><i
-															class="tipi-i-pinterest"></i></span></a><a
-													href="whatsapp://send?text=Gardens to Visit in Winnipeg – https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
-													class="tipi-tip tipi-tip-move tipi-xl-0 share-button share-button-wa"
-													data-title="Share" target="_blank"><span
-														class="share-button-content tipi-vertical-c"><i
-															class="tipi-i-whatsapp"></i></span></a>
-											</div>
-											<div
-												class="user-page-box-1 user-box-type-1 tipi-xs-12 user-page-box clearfix">
-												<div class="mask">
-													<a href="author/jbell/">
-														<span class="overlay-arrow-r overlay-arrow"><i
-																class="tipi-i-long-right"></i></span>
-													</a>
+											<footer class="entry-footer">
+												<div class="post-tags clearfix"><a href="tag/assiniboine-park/"
+														rel="tag">Assiniboine Park</a><a href="tag/downtown-winnipeg/"
+														rel="tag">Downtown Winnipeg</a><a
+														href="tag/gardens-in-winnipeg/" rel="tag">Gardens in
+														Winnipeg</a><a href="tag/living-in-downtown-winnipeg/"
+														rel="tag">Living in Downtown Winnipeg</a><a
+														href="tag/rooftop-at-the-wag/" rel="tag">Rooftop at the
+														Wag</a><a href="tag/spring/" rel="tag">Spring</a><a
+														href="tag/spring-in-winnipeg/" rel="tag">Spring in
+														Winnipeg</a><a href="tag/zen-garden/" rel="tag">Zen
+														Garden</a></div>
+												<div
+													class="share-it share-it-1 share-it-bold share-it-count-0 share-it-after tipi-flex">
+													<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
+														class="tipi-tip tipi-tip-move share-button share-button-fb"
+														data-title="Share" target="_blank"><span
+															class="share-button-content tipi-vertical-c"><i
+																class="tipi-i-facebook"></i></span></a><a
+														href="https://twitter.com/intent/tweet?text=Gardens%20to%20Visit%20in%20Winnipeg%20-%20https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
+														class="tipi-tip tipi-tip-move share-button share-button-tw"
+														data-title="Tweet" target="_blank"><span
+															class="share-button-content tipi-vertical-c"><i
+																class="tipi-i-twitter"></i></span></a><a
+														href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
+														class="tipi-tip tipi-tip-move share-button share-button-pin"
+														data-title="Pin" target="_blank"><span
+															class="share-button-content tipi-vertical-c"><i
+																class="tipi-i-pinterest"></i></span></a><a
+														href="whatsapp://send?text=Gardens to Visit in Winnipeg – https%3A%2F%2Flivingat300main.ca%2Fgardens-to-visit-in-winnipeg%2F"
+														class="tipi-tip tipi-tip-move tipi-xl-0 share-button share-button-wa"
+														data-title="Share" target="_blank"><span
+															class="share-button-content tipi-vertical-c"><i
+																class="tipi-i-whatsapp"></i></span></a>
 												</div>
-												<div class="meta">
-													<div class="author-info-wrap">
-														<div class="author-name font-1"><a
-																href="author/jbell/">Jessica
-																Bell</a></div>
+												<div
+													class="user-page-box-1 user-box-type-1 tipi-xs-12 user-page-box clearfix">
+													<div class="mask">
+														<a href="author/jbell/">
+															<span class="overlay-arrow-r overlay-arrow"><i
+																	class="tipi-i-long-right"></i></span>
+														</a>
 													</div>
-													<div class="author-right-meta">
-														<div class="author-bio body-color link-color-wrap">I am a born
-															and raised Winnipegger, having lived independently in most
-															major areas of the city, my preference is to stay close to
-															the hustle and bustle of downtown Winnipeg. Professionally I
-															started out freelancing Social Media Services, Marketing,
-															Content Writing, Design, and am in the midst of my freelance
-															hobbies being turned into a full fledge start-up.
-															Personally, I love to explore, learn and create. I enjoy
-															studying and practice with energy &amp; holistic healing
-															methods such as Aromatherapy, Reiki and Hypnotherapy. I
-															spend much of my free time walking our city sites, river
-															walks and downtown sidewalks with my trusty pup, soaking in
-															the unique history, architecture and culture Winnipeg has to
-															offer.</div>
-														<div class="icons">
+													<div class="meta">
+														<div class="author-info-wrap">
+															<div class="author-name font-1"><a
+																	href="author/jbell/">Jessica
+																	Bell</a></div>
 														</div>
-													</div>
-												</div>
-											</div>
-											<div class="related-posts-wrap clearfix">
-												<div id="block-wrap-26010"
-													class="block-wrap block-wrap-29 block-css-26010 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 tipi-box ppl-m-4 ppl-s-2 clearfix"
-													data-id="26010">
-													<div class="tipi-row-inner-style clearfix">
-														<div class="tipi-row-inner-box contents">
-															<div
-																class="block-title-wrap module-block-title clearfix  block-title-wrap-style block-title-1 with-load-more">
-																<div class="block-title-area clearfix">
-																	<div class="block-title font-1">Related</div>
-																</div>
-																<div class="filters tipi-flex font-2">
-																	<div
-																		class="load-more-wrap load-more-size-2 load-more-wrap-2">
-																		<span data-id="26010"
-																			class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more"
-																			data-dir="1"><i class="tipi-i-angle-left"
-																				aria-hidden="true"></i></span>
-																		<span data-id="26010"
-																			class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2"
-																			data-dir="2"><i class="tipi-i-angle-right"
-																				aria-hidden="true"></i></span>
-																	</div>
-																</div>
-															</div>
-															<div class="block block-29 tipi-flex meta-overlay-0">
-																<article
-																	class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-0 preview-classic preview-29 img-ani-1 elements-design-1 post-10187 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-travel tag-camping-in-manitoba tag-campsites-in-manitoba tag-manitoba tag-travel-manitoba">
-																	<div class="preview-mini-wrap clearfix">
-																		<div class="mask"><a
-																				href="best-campsites-in-manitoba/"
-																				class="mask-img"><img width="293"
-																					height="293"
-																					src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-293x293.jpg"
-																					class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
-																					alt="" loading="lazy"
-																					srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-900x900.jpg 900w"
-																					sizes="(max-width: 293px) 100vw, 293px" /></a>
-																		</div>
-																		<div class="meta">
-																			<div
-																				class="byline byline-2 byline-cats-design-1">
-																				<div class="byline-part cats"><a
-																						href="category/adventure/"
-																						class="cat">Adventure</a><a
-																						href="category/travel/"
-																						class="cat">Travel</a></div>
-																				<span
-																					class="byline-part separator">&middot;</span><span
-																					class="byline-part date"><time
-																						class="entry-date published dateCreated"
-																						datetime="2022-06-22T18:28:12+00:00">June
-																						22, 2022</time></span>
-																			</div>
-																			<div class="title-wrap">
-																				<h3 class="title"><a
-																						href="best-campsites-in-manitoba/">Best
-																						Campsites in Manitoba</a></h3>
-																			</div>
-																		</div>
-																	</div>
-																</article>
-																<article
-																	class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-1 preview-classic preview-29 img-ani-1 elements-design-1 post-7899 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-lifestyle tag-birds-hill-park tag-churchill tag-explore-manitoba tag-gimli tag-living-in-manitoba tag-riding-mountain-park tag-spring-in-manitoba tag-weekend-getaways">
-																	<div class="preview-mini-wrap clearfix">
-																		<div class="mask"><a
-																				href="weekend-getaways-manitoba-spring-edition/"
-																				class="mask-img"><img width="293"
-																					height="293"
-																					src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-293x293.png"
-																					class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
-																					alt="" loading="lazy"
-																					srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-293x293.png 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-100x100.png 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-390x390.png 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-585x585.png 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-500x500.png 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-200x200.png 200w"
-																					sizes="(max-width: 293px) 100vw, 293px" /></a>
-																		</div>
-																		<div class="meta">
-																			<div
-																				class="byline byline-2 byline-cats-design-1">
-																				<div class="byline-part cats"><a
-																						href="category/adventure/"
-																						class="cat">Adventure</a><a
-																						href="category/lifestyle/"
-																						class="cat">Lifestyle</a></div>
-																				<span
-																					class="byline-part separator">&middot;</span><span
-																					class="byline-part date"><time
-																						class="entry-date published dateCreated"
-																						datetime="2022-05-06T18:51:12+00:00">May
-																						6, 2022</time></span>
-																			</div>
-																			<div class="title-wrap">
-																				<h3 class="title"><a
-																						href="weekend-getaways-manitoba-spring-edition/">Spring
-																						Getaways in Manitoba</a></h3>
-																			</div>
-																		</div>
-																	</div>
-																</article>
-																<article
-																	class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-2 preview-classic preview-29 img-ani-1 elements-design-1 post-5835 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-environment category-food-restaurants tag-assiniboine-forest tag-assiniboine-park tag-bbq-season tag-bruce-park tag-crescent-drive-gold-course tag-crescent-drive-park tag-eve-werier-memorial-pond tag-explore-winnipeg tag-go-to-spots-in-winnipeg tag-la-barriere-park tag-la-salle-river tag-nice-weather-in-winnipeg tag-parks-in-winnipeg tag-picnic-places-in-winnipeg tag-picnic-season tag-picnic-spots-in-winnipeg tag-red-river tag-summer-in-winnipeg tag-tall-grass-prairie-bread-company tag-thermea tag-walking-trails-in-winnipeg tag-what-to-do-in-winnipeg tag-wildlife-winnipeg tag-winnipeg tag-winnipeg-outdoors tag-winnipeg-parks tag-winnipeg-picnic-places tag-winnipeg-walking-trails">
-																	<div class="preview-mini-wrap clearfix">
-																		<div class="mask"><a
-																				href="four-picnic-perfect-parks-in-winnipeg/"
-																				class="mask-img"><img width="293"
-																					height="293"
-																					src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-293x293.jpg"
-																					class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
-																					alt="Downtown Winnipeg, Picnic Winnipeg, Summer in Winnipeg, Things To Do in Winnipeg, Explore Winnipeg, Parks in Winnipeg, Winnipeg Parks, Where to chill in Winnipeg, Where to Hang out in Winnipeg, Hangout places in Winnipeg"
-																					loading="lazy"
-																					srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-900x900.jpg 900w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-200x200.jpg 200w"
-																					sizes="(max-width: 293px) 100vw, 293px" /></a>
-																		</div>
-																		<div class="meta">
-																			<div
-																				class="byline byline-2 byline-cats-design-1">
-																				<div class="byline-part cats"><a
-																						href="category/adventure/"
-																						class="cat">Adventure</a><a
-																						href="category/environment/"
-																						class="cat">Environment</a><a
-																						href="category/food-restaurants/"
-																						class="cat">Food &amp;
-																						Restaurants</a></div><span
-																					class="byline-part separator">&middot;</span><span
-																					class="byline-part date"><time
-																						class="entry-date published dateCreated"
-																						datetime="2019-09-17T21:12:10+00:00">September
-																						17, 2019</time></span>
-																			</div>
-																			<div class="title-wrap">
-																				<h3 class="title"><a
-																						href="four-picnic-perfect-parks-in-winnipeg/">Four
-																						Picnic-Perfect Parks in
-																						Winnipeg</a></h3>
-																			</div>
-																		</div>
-																	</div>
-																</article>
-																<article
-																	class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-3 preview-classic preview-29 img-ani-1 elements-design-1 post-5790 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-downtown-events category-exchange-district-events tag-aboriginal-day-live tag-apartment-living tag-apartment-living-in-downtown tag-apartment-living-in-downtown-winnipeg tag-apartment-living-in-winnipeg tag-apartments-in-downtown-winnipeg tag-canada-day-festival tag-cmhr tag-cn-stage tag-cn-stage-and-field tag-doors-open tag-doors-open-winnipeg tag-downtown-lifestyle tag-downtown-living tag-downtown-winnipeg tag-downtown-winnipeg-apartments tag-downtown-winnipeg-biz tag-downtown-winnipeg-events tag-downtown-winnipeg-lifestyle tag-downtown-winnipeg-living tag-downtown-winnipeg-riverwalk tag-events-in-downtown-winnipeg tag-events-in-exchange-district tag-exchange-district-events tag-fitness-in-the-park tag-food-truck-wars tag-forth-cafe tag-fringe-festival tag-historic-building tag-historic-buildings tag-historic-site tag-historical-architecture tag-historical-architecture-in-winnipeg tag-historical-walking-tour tag-historical-walking-tours tag-human-rights-in-winnipeg tag-human-rights-museum-in-winnipeg tag-living-in-an-apartment tag-living-in-downtown tag-living-in-downtown-winnipeg tag-living-in-winnipeg tag-manitoba-summers tag-manyfest tag-meet-me-at-the-forks tag-memorial-park tag-millenium-library-park tag-movies-on-memorial tag-nightlife-in-downtown-winnipeg tag-nightlife-in-winnipeg tag-pride-day tag-red-river-mutual-trail tag-reggae-fest tag-riverwalk tag-salsa-at-the-forks tag-salsa-sundays tag-salsa-sundays-at-the-forks tag-soca-reggae-festival tag-summer-in-winnipeg tag-the-canadian-museum-for-human-rights tag-the-commons-at-the-forks tag-the-cube tag-the-cube-stage tag-the-cube-stage-in-old-market-square tag-the-forks tag-the-forks-canopy tag-the-forks-skating-trail tag-the-good-will-social-club tag-the-goodwill-social-club tag-things-to-do-in-downtown-winnipeg tag-things-to-do-in-winnipeg tag-to-do-list tag-upper-fort-garry tag-what-to-do tag-what-to-do-in-downtown-winnipeg tag-what-to-do-in-winnipeg tag-where-to-go-in-downtown-winnipeg tag-where-to-go-in-winnipeg tag-winnipeg tag-winnipeg-boa-tour tag-winnipeg-downtown-festivals tag-winnipeg-festivals-in-downtown tag-winnipeg-food-tours tag-winnipeg-fringe-festival tag-winnipeg-tours tag-winnipeg-trolley tag-winter-in-winnipeg">
-																	<div class="preview-mini-wrap clearfix">
-																		<div class="mask"><a
-																				href="your-downtown-winnipeg-to-do-list/"
-																				class="mask-img"><img width="293"
-																					height="293"
-																					src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-293x293.jpg"
-																					class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
-																					alt="Downtown Winnipeg, Winnipeg, Downtown, The Forks, Living in Downtown Winnipeg, Downtown Winnipeg Living, Things To Do in Winnipeg, Winnipeg Tourism, Things To Do in Downtown Winnipeg, 300 Main Downtown Winnipeg Apartments, Exchange District, Things to visit in Winnipeg"
-																					loading="lazy"
-																					srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-200x200.jpg 200w"
-																					sizes="(max-width: 293px) 100vw, 293px" /></a>
-																		</div>
-																		<div class="meta">
-																			<div
-																				class="byline byline-2 byline-cats-design-1">
-																				<div class="byline-part cats"><a
-																						href="category/adventure/"
-																						class="cat">Adventure</a><a
-																						href="category/downtown-events/"
-																						class="cat">Downtown
-																						Events</a><a
-																						href="category/exchange-district-events/"
-																						class="cat">Exchange District
-																						Events</a></div><span
-																					class="byline-part separator">&middot;</span><span
-																					class="byline-part date"><time
-																						class="entry-date published dateCreated"
-																						datetime="2019-09-05T20:16:22+00:00">September
-																						5, 2019</time></span>
-																			</div>
-																			<div class="title-wrap">
-																				<h3 class="title"><a
-																						href="your-downtown-winnipeg-to-do-list/">Your
-																						Downtown Winnipeg To-Do List</a>
-																				</h3>
-																			</div>
-																		</div>
-																	</div>
-																</article>
+														<div class="author-right-meta">
+															<div class="author-bio body-color link-color-wrap">I am a
+																born
+																and raised Winnipegger, having lived independently in
+																most
+																major areas of the city, my preference is to stay close
+																to
+																the hustle and bustle of downtown Winnipeg.
+																Professionally I
+																started out freelancing Social Media Services,
+																Marketing,
+																Content Writing, Design, and am in the midst of my
+																freelance
+																hobbies being turned into a full fledge start-up.
+																Personally, I love to explore, learn and create. I enjoy
+																studying and practice with energy &amp; holistic healing
+																methods such as Aromatherapy, Reiki and Hypnotherapy. I
+																spend much of my free time walking our city sites, river
+																walks and downtown sidewalks with my trusty pup, soaking
+																in
+																the unique history, architecture and culture Winnipeg
+																has to
+																offer.</div>
+															<div class="icons">
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="next-prev-posts clearfix">
-												<div class="prev-block prev-next-block clearfix">
-													<div class="mask">
-														<a
-															href="preparing-your-cat-to-move-into-a-new-home/">
-															<i class="tipi-i-long-left"></i>
-															<img width="100" height="100"
-																src="wp-content/themes/zeen/assets/img/lazy.png"
-																data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-100x100.jpg"
-																class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
-																alt="" loading="lazy"
-																data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-200x200.jpg 200w"
-																data-zeen-sizes="(max-width: 100px) 100vw, 100px" />
-														</a>
-													</div>
-													<div class="meta">
-														<a href="preparing-your-cat-to-move-into-a-new-home/"
-															class="previous-title title">
-															<span>Previous</span>
-															Preparing Your Cat To Move Into a New Home </a>
-													</div>
-												</div>
-												<div class="next-block prev-next-block clearfix">
-													<div class="mask">
-														<i class="tipi-i-long-right"></i>
-														<a
-															href="to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/">
-															<img width="100" height="100"
-																src="wp-content/themes/zeen/assets/img/lazy.png"
-																data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-100x100.jpg"
-																class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
-																alt="" loading="lazy"
-																data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-585x585.jpg 585w"
-																data-zeen-sizes="(max-width: 100px) 100vw, 100px" />
-														</a>
-													</div>
-													<div class="meta">
-														<a href="to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/"
-															class="next-title title">
-															<span>Next</span>
-															To Bark or not To Bark &#8211; 5 Basic Steps to Successful
-															Training your Dog </a>
-													</div>
-												</div>
-											</div>
-
-											<div id="comments" class="comments-area">
-
-												<h2 class="comments-title footer-block-title">
-													One Comment </h2>
-
-												<ol class="comment-list">
-													<li id="comment-8104" class="comment even thread-even depth-1">
-														<article id="div-comment-8104" class="comment-body">
-															<footer class="comment-meta">
-																<div class="comment-author vcard">
-																	<img alt=''
-																		src='https://secure.gravatar.com/avatar/d51dbdca8f46a5dc82e7c7b0ca445ccb?s=130&#038;d=mm&#038;r=g'
-																		srcset='https://secure.gravatar.com/avatar/d51dbdca8f46a5dc82e7c7b0ca445ccb?s=260&#038;d=mm&#038;r=g 2x'
-																		class='avatar avatar-130 photo' height='130'
-																		width='130' loading='lazy' /> <b class="fn"><a
-																			href='https://thoughtswithn.com'
-																			rel='external nofollow ugc'
-																			class='url'>Natasha MacFarlane</a></b> <span
-																		class="says">says:</span>
-																</div><!-- .comment-author -->
-
-																<div class="comment-metadata">
-																	<a
-																		href="gardens-to-visit-in-winnipeg/#comment-8104"><time
-																			datetime="2022-06-18T01:09:22+00:00">June
-																			18, 2022 at 1:09 am</time></a>
-																</div><!-- .comment-metadata -->
-
-															</footer><!-- .comment-meta -->
-
-															<div class="comment-content">
-																<p>I&#8217;ve never heard of some of these and
-																	I&#8217;ve lived into he community nearly my whole
-																	life! Thanks for sharing!!!</p>
-															</div><!-- .comment-content -->
-
-															<div class="reply"><a rel='nofollow'
-																	class='comment-reply-link' href='#comment-8104'
-																	data-commentid="8104" data-postid="9920"
-																	data-belowelement="div-comment-8104"
-																	data-respondelement="respond"
-																	data-replyto="Reply to Natasha MacFarlane"
-																	aria-label='Reply to Natasha MacFarlane'>Reply</a>
+												<div class="related-posts-wrap clearfix">
+													<div id="block-wrap-26010"
+														class="block-wrap block-wrap-29 block-css-26010 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 tipi-box ppl-m-4 ppl-s-2 clearfix"
+														data-id="26010">
+														<div class="tipi-row-inner-style clearfix">
+															<div class="tipi-row-inner-box contents">
+																<div
+																	class="block-title-wrap module-block-title clearfix  block-title-wrap-style block-title-1 with-load-more">
+																	<div class="block-title-area clearfix">
+																		<div class="block-title font-1">Related</div>
+																	</div>
+																	<div class="filters tipi-flex font-2">
+																		<div
+																			class="load-more-wrap load-more-size-2 load-more-wrap-2">
+																			<span data-id="26010"
+																				class="tipi-arrow tipi-arrow-s tipi-arrow-l block-loader block-more block-more-1 no-more"
+																				data-dir="1"><i
+																					class="tipi-i-angle-left"
+																					aria-hidden="true"></i></span>
+																			<span data-id="26010"
+																				class="tipi-arrow tipi-arrow-s tipi-arrow-r block-loader block-more block-more-2"
+																				data-dir="2"><i
+																					class="tipi-i-angle-right"
+																					aria-hidden="true"></i></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="block block-29 tipi-flex meta-overlay-0">
+																	<article
+																		class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-0 preview-classic preview-29 img-ani-1 elements-design-1 post-10187 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-travel tag-camping-in-manitoba tag-campsites-in-manitoba tag-manitoba tag-travel-manitoba">
+																		<div class="preview-mini-wrap clearfix">
+																			<div class="mask"><a
+																					href="best-campsites-in-manitoba/"
+																					class="mask-img"><img width="293"
+																						height="293"
+																						src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-293x293.jpg"
+																						class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
+																						alt="" loading="lazy"
+																						srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/06/pexels-uriel-mont-6271635-1-900x900.jpg 900w"
+																						sizes="(max-width: 293px) 100vw, 293px" /></a>
+																			</div>
+																			<div class="meta">
+																				<div
+																					class="byline byline-2 byline-cats-design-1">
+																					<div class="byline-part cats"><a
+																							href="category/adventure/"
+																							class="cat">Adventure</a><a
+																							href="category/travel/"
+																							class="cat">Travel</a></div>
+																					<span
+																						class="byline-part separator">&middot;</span><span
+																						class="byline-part date"><time
+																							class="entry-date published dateCreated"
+																							datetime="2022-06-22T18:28:12+00:00">June
+																							22, 2022</time></span>
+																				</div>
+																				<div class="title-wrap">
+																					<h3 class="title"><a
+																							href="best-campsites-in-manitoba/">Best
+																							Campsites in Manitoba</a>
+																					</h3>
+																				</div>
+																			</div>
+																		</div>
+																	</article>
+																	<article
+																		class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-1 preview-classic preview-29 img-ani-1 elements-design-1 post-7899 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-lifestyle tag-birds-hill-park tag-churchill tag-explore-manitoba tag-gimli tag-living-in-manitoba tag-riding-mountain-park tag-spring-in-manitoba tag-weekend-getaways">
+																		<div class="preview-mini-wrap clearfix">
+																			<div class="mask"><a
+																					href="weekend-getaways-manitoba-spring-edition/"
+																					class="mask-img"><img width="293"
+																						height="293"
+																						src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-293x293.png"
+																						class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
+																						alt="" loading="lazy"
+																						srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-293x293.png 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-100x100.png 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-390x390.png 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-585x585.png 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-500x500.png 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-200x200.png 200w"
+																						sizes="(max-width: 293px) 100vw, 293px" /></a>
+																			</div>
+																			<div class="meta">
+																				<div
+																					class="byline byline-2 byline-cats-design-1">
+																					<div class="byline-part cats"><a
+																							href="category/adventure/"
+																							class="cat">Adventure</a><a
+																							href="category/lifestyle/"
+																							class="cat">Lifestyle</a>
+																					</div>
+																					<span
+																						class="byline-part separator">&middot;</span><span
+																						class="byline-part date"><time
+																							class="entry-date published dateCreated"
+																							datetime="2022-05-06T18:51:12+00:00">May
+																							6, 2022</time></span>
+																				</div>
+																				<div class="title-wrap">
+																					<h3 class="title"><a
+																							href="weekend-getaways-manitoba-spring-edition/">Spring
+																							Getaways in Manitoba</a>
+																					</h3>
+																				</div>
+																			</div>
+																		</div>
+																	</article>
+																	<article
+																		class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-2 preview-classic preview-29 img-ani-1 elements-design-1 post-5835 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-environment category-food-restaurants tag-assiniboine-forest tag-assiniboine-park tag-bbq-season tag-bruce-park tag-crescent-drive-gold-course tag-crescent-drive-park tag-eve-werier-memorial-pond tag-explore-winnipeg tag-go-to-spots-in-winnipeg tag-la-barriere-park tag-la-salle-river tag-nice-weather-in-winnipeg tag-parks-in-winnipeg tag-picnic-places-in-winnipeg tag-picnic-season tag-picnic-spots-in-winnipeg tag-red-river tag-summer-in-winnipeg tag-tall-grass-prairie-bread-company tag-thermea tag-walking-trails-in-winnipeg tag-what-to-do-in-winnipeg tag-wildlife-winnipeg tag-winnipeg tag-winnipeg-outdoors tag-winnipeg-parks tag-winnipeg-picnic-places tag-winnipeg-walking-trails">
+																		<div class="preview-mini-wrap clearfix">
+																			<div class="mask"><a
+																					href="four-picnic-perfect-parks-in-winnipeg/"
+																					class="mask-img"><img width="293"
+																						height="293"
+																						src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-293x293.jpg"
+																						class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
+																						alt="Downtown Winnipeg, Picnic Winnipeg, Summer in Winnipeg, Things To Do in Winnipeg, Explore Winnipeg, Parks in Winnipeg, Winnipeg Parks, Where to chill in Winnipeg, Where to Hang out in Winnipeg, Hangout places in Winnipeg"
+																						loading="lazy"
+																						srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-900x900.jpg 900w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/mihaly-koles-O9tFkijX4DM-unsplash-200x200.jpg 200w"
+																						sizes="(max-width: 293px) 100vw, 293px" /></a>
+																			</div>
+																			<div class="meta">
+																				<div
+																					class="byline byline-2 byline-cats-design-1">
+																					<div class="byline-part cats"><a
+																							href="category/adventure/"
+																							class="cat">Adventure</a><a
+																							href="category/environment/"
+																							class="cat">Environment</a><a
+																							href="category/food-restaurants/"
+																							class="cat">Food &amp;
+																							Restaurants</a></div><span
+																						class="byline-part separator">&middot;</span><span
+																						class="byline-part date"><time
+																							class="entry-date published dateCreated"
+																							datetime="2019-09-17T21:12:10+00:00">September
+																							17, 2019</time></span>
+																				</div>
+																				<div class="title-wrap">
+																					<h3 class="title"><a
+																							href="four-picnic-perfect-parks-in-winnipeg/">Four
+																							Picnic-Perfect Parks in
+																							Winnipeg</a></h3>
+																				</div>
+																			</div>
+																		</div>
+																	</article>
+																	<article
+																		class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo stack-1 stack-design-1 separation-border loop-3 preview-classic preview-29 img-ani-1 elements-design-1 post-5790 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-downtown-events category-exchange-district-events tag-aboriginal-day-live tag-apartment-living tag-apartment-living-in-downtown tag-apartment-living-in-downtown-winnipeg tag-apartment-living-in-winnipeg tag-apartments-in-downtown-winnipeg tag-canada-day-festival tag-cmhr tag-cn-stage tag-cn-stage-and-field tag-doors-open tag-doors-open-winnipeg tag-downtown-lifestyle tag-downtown-living tag-downtown-winnipeg tag-downtown-winnipeg-apartments tag-downtown-winnipeg-biz tag-downtown-winnipeg-events tag-downtown-winnipeg-lifestyle tag-downtown-winnipeg-living tag-downtown-winnipeg-riverwalk tag-events-in-downtown-winnipeg tag-events-in-exchange-district tag-exchange-district-events tag-fitness-in-the-park tag-food-truck-wars tag-forth-cafe tag-fringe-festival tag-historic-building tag-historic-buildings tag-historic-site tag-historical-architecture tag-historical-architecture-in-winnipeg tag-historical-walking-tour tag-historical-walking-tours tag-human-rights-in-winnipeg tag-human-rights-museum-in-winnipeg tag-living-in-an-apartment tag-living-in-downtown tag-living-in-downtown-winnipeg tag-living-in-winnipeg tag-manitoba-summers tag-manyfest tag-meet-me-at-the-forks tag-memorial-park tag-millenium-library-park tag-movies-on-memorial tag-nightlife-in-downtown-winnipeg tag-nightlife-in-winnipeg tag-pride-day tag-red-river-mutual-trail tag-reggae-fest tag-riverwalk tag-salsa-at-the-forks tag-salsa-sundays tag-salsa-sundays-at-the-forks tag-soca-reggae-festival tag-summer-in-winnipeg tag-the-canadian-museum-for-human-rights tag-the-commons-at-the-forks tag-the-cube tag-the-cube-stage tag-the-cube-stage-in-old-market-square tag-the-forks tag-the-forks-canopy tag-the-forks-skating-trail tag-the-good-will-social-club tag-the-goodwill-social-club tag-things-to-do-in-downtown-winnipeg tag-things-to-do-in-winnipeg tag-to-do-list tag-upper-fort-garry tag-what-to-do tag-what-to-do-in-downtown-winnipeg tag-what-to-do-in-winnipeg tag-where-to-go-in-downtown-winnipeg tag-where-to-go-in-winnipeg tag-winnipeg tag-winnipeg-boa-tour tag-winnipeg-downtown-festivals tag-winnipeg-festivals-in-downtown tag-winnipeg-food-tours tag-winnipeg-fringe-festival tag-winnipeg-tours tag-winnipeg-trolley tag-winter-in-winnipeg">
+																		<div class="preview-mini-wrap clearfix">
+																			<div class="mask"><a
+																					href="your-downtown-winnipeg-to-do-list/"
+																					class="mask-img"><img width="293"
+																						height="293"
+																						src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-293x293.jpg"
+																						class="attachment-zeen-293-293 size-zeen-293-293 wp-post-image"
+																						alt="Downtown Winnipeg, Winnipeg, Downtown, The Forks, Living in Downtown Winnipeg, Downtown Winnipeg Living, Things To Do in Winnipeg, Winnipeg Tourism, Things To Do in Downtown Winnipeg, 300 Main Downtown Winnipeg Apartments, Exchange District, Things to visit in Winnipeg"
+																						loading="lazy"
+																						srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2019/09/IMG_3520-2-200x200.jpg 200w"
+																						sizes="(max-width: 293px) 100vw, 293px" /></a>
+																			</div>
+																			<div class="meta">
+																				<div
+																					class="byline byline-2 byline-cats-design-1">
+																					<div class="byline-part cats"><a
+																							href="category/adventure/"
+																							class="cat">Adventure</a><a
+																							href="category/downtown-events/"
+																							class="cat">Downtown
+																							Events</a><a
+																							href="category/exchange-district-events/"
+																							class="cat">Exchange
+																							District
+																							Events</a></div><span
+																						class="byline-part separator">&middot;</span><span
+																						class="byline-part date"><time
+																							class="entry-date published dateCreated"
+																							datetime="2019-09-05T20:16:22+00:00">September
+																							5, 2019</time></span>
+																				</div>
+																				<div class="title-wrap">
+																					<h3 class="title"><a
+																							href="your-downtown-winnipeg-to-do-list/">Your
+																							Downtown Winnipeg To-Do
+																							List</a>
+																					</h3>
+																				</div>
+																			</div>
+																		</div>
+																	</article>
+																</div>
 															</div>
-														</article><!-- .comment-body -->
-													</li><!-- #comment-## -->
-												</ol>
-												<div id="respond" class="comment-respond">
-													<h3 id="reply-title" class="footer-block-title comment-reply-title">
-														Leave a Reply <small><a rel="nofollow"
-																id="cancel-comment-reply-link"
-																href="/gardens-to-visit-in-winnipeg/#respond"
-																style="display:none;">Cancel reply</a></small></h3>
-													<form action="wp-comments-post.php"
-														method="post" id="commentform" class="comment-form" novalidate>
-														<p class="comment-notes"><span id="email-notes">Your email
-																address will not be published.</span> <span
-																class="required-field-message"
-																aria-hidden="true">Required fields are marked <span
-																	class="required" aria-hidden="true">*</span></span>
-														</p>
-														<p class="comment-form-comment"><label for="comment">Comment
-																<span class="required"
-																	aria-hidden="true">*</span></label> <textarea
-																id="comment" name="comment" cols="45" rows="8"
-																maxlength="65525" required></textarea></p>
-														<p class="comment-form-author"><label for="author">Name <span
-																	class="required" aria-hidden="true">*</span></label>
-															<input id="author" name="author" type="text" value=""
-																size="30" maxlength="245" required />
-														</p>
-														<p class="comment-form-email"><label for="email">Email <span
-																	class="required" aria-hidden="true">*</span></label>
-															<input id="email" name="email" type="email" value=""
-																size="30" maxlength="100" aria-describedby="email-notes"
-																required />
-														</p>
-														<p class="comment-form-url"><label for="url">Website</label>
-															<input id="url" name="url" type="url" value="" size="30"
-																maxlength="200" />
-														</p>
-														<p class="form-submit"><input name="submit" type="submit"
-																id="submit" class="submit tipi-button" value="Submit" />
-															<input type='hidden' name='comment_post_ID' value='9920'
-																id='comment_post_ID' />
-															<input type='hidden' name='comment_parent'
-																id='comment_parent' value='0' />
-														</p>
-													</form>
-												</div><!-- #respond -->
+														</div>
+													</div>
+												</div>
+												<div class="next-prev-posts clearfix">
+													<div class="prev-block prev-next-block clearfix">
+														<div class="mask">
+															<a href="preparing-your-cat-to-move-into-a-new-home/">
+																<i class="tipi-i-long-left"></i>
+																<img width="100" height="100"
+																	src="wp-content/themes/zeen/assets/img/lazy.png"
+																	data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-100x100.jpg"
+																	class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
+																	alt="" loading="lazy"
+																	data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/pexels-tranmautritam-2061057-1-200x200.jpg 200w"
+																	data-zeen-sizes="(max-width: 100px) 100vw, 100px" />
+															</a>
+														</div>
+														<div class="meta">
+															<a href="preparing-your-cat-to-move-into-a-new-home/"
+																class="previous-title title">
+																<span>Previous</span>
+																Preparing Your Cat To Move Into a New Home </a>
+														</div>
+													</div>
+													<div class="next-block prev-next-block clearfix">
+														<div class="mask">
+															<i class="tipi-i-long-right"></i>
+															<a
+																href="to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/">
+																<img width="100" height="100"
+																	src="wp-content/themes/zeen/assets/img/lazy.png"
+																	data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-100x100.jpg"
+																	class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
+																	alt="" loading="lazy"
+																	data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/bark5-1-585x585.jpg 585w"
+																	data-zeen-sizes="(max-width: 100px) 100vw, 100px" />
+															</a>
+														</div>
+														<div class="meta">
+															<a href="to-bark-or-not-to-bark-5-basic-steps-to-successful-training-your-dog/"
+																class="next-title title">
+																<span>Next</span>
+																To Bark or not To Bark &#8211; 5 Basic Steps to
+																Successful
+																Training your Dog </a>
+														</div>
+													</div>
+												</div>
 
-											</div><!-- #comments -->
-										</footer><!-- .entry-footer -->
+												<div id="comments" class="comments-area">
+
+													<h2 class="comments-title footer-block-title">
+														One Comment </h2>
+
+													<ol class="comment-list">
+														<li id="comment-8104" class="comment even thread-even depth-1">
+															<article id="div-comment-8104" class="comment-body">
+																<footer class="comment-meta">
+																	<div class="comment-author vcard">
+																		<img alt=''
+																			src='https://secure.gravatar.com/avatar/d51dbdca8f46a5dc82e7c7b0ca445ccb?s=130&#038;d=mm&#038;r=g'
+																			srcset='https://secure.gravatar.com/avatar/d51dbdca8f46a5dc82e7c7b0ca445ccb?s=260&#038;d=mm&#038;r=g 2x'
+																			class='avatar avatar-130 photo' height='130'
+																			width='130' loading='lazy' /> <b
+																			class="fn"><a
+																				href='https://thoughtswithn.com'
+																				rel='external nofollow ugc'
+																				class='url'>Natasha MacFarlane</a></b>
+																		<span class="says">says:</span>
+																	</div><!-- .comment-author -->
+
+																	<div class="comment-metadata">
+																		<a
+																			href="gardens-to-visit-in-winnipeg/#comment-8104"><time
+																				datetime="2022-06-18T01:09:22+00:00">June
+																				18, 2022 at 1:09 am</time></a>
+																	</div><!-- .comment-metadata -->
+
+																</footer><!-- .comment-meta -->
+
+																<div class="comment-content">
+																	<p>I&#8217;ve never heard of some of these and
+																		I&#8217;ve lived into he community nearly my
+																		whole
+																		life! Thanks for sharing!!!</p>
+																</div><!-- .comment-content -->
+
+																<div class="reply"><a rel='nofollow'
+																		class='comment-reply-link' href='#comment-8104'
+																		data-commentid="8104" data-postid="9920"
+																		data-belowelement="div-comment-8104"
+																		data-respondelement="respond"
+																		data-replyto="Reply to Natasha MacFarlane"
+																		aria-label='Reply to Natasha MacFarlane'>Reply</a>
+																</div>
+															</article><!-- .comment-body -->
+														</li><!-- #comment-## -->
+													</ol>
+													<div id="respond" class="comment-respond">
+														<h3 id="reply-title"
+															class="footer-block-title comment-reply-title">
+															Leave a Reply <small><a rel="nofollow"
+																	id="cancel-comment-reply-link"
+																	href="/gardens-to-visit-in-winnipeg/#respond"
+																	style="display:none;">Cancel reply</a></small></h3>
+														<form action="wp-comments-post.php" method="post"
+															id="commentform" class="comment-form" novalidate>
+															<p class="comment-notes"><span id="email-notes">Your email
+																	address will not be published.</span> <span
+																	class="required-field-message"
+																	aria-hidden="true">Required fields are marked <span
+																		class="required"
+																		aria-hidden="true">*</span></span>
+															</p>
+															<p class="comment-form-comment"><label for="comment">Comment
+																	<span class="required"
+																		aria-hidden="true">*</span></label> <textarea
+																	id="comment" name="comment" cols="45" rows="8"
+																	maxlength="65525" required></textarea></p>
+															<p class="comment-form-author"><label for="author">Name
+																	<span class="required"
+																		aria-hidden="true">*</span></label>
+																<input id="author" name="author" type="text" value=""
+																	size="30" maxlength="245" required />
+															</p>
+															<p class="comment-form-email"><label for="email">Email <span
+																		class="required"
+																		aria-hidden="true">*</span></label>
+																<input id="email" name="email" type="email" value=""
+																	size="30" maxlength="100"
+																	aria-describedby="email-notes" required />
+															</p>
+															<p class="comment-form-url"><label for="url">Website</label>
+																<input id="url" name="url" type="url" value="" size="30"
+																	maxlength="200" />
+															</p>
+															<p class="form-submit"><input name="submit" type="submit"
+																	id="submit" class="submit tipi-button"
+																	value="Submit" />
+																<input type='hidden' name='comment_post_ID' value='9920'
+																	id='comment_post_ID' />
+																<input type='hidden' name='comment_parent'
+																	id='comment_parent' value='0' />
+															</p>
+														</form>
+													</div><!-- #respond -->
+
+												</div><!-- #comments -->
+											</footer><!-- .entry-footer -->
 									</article><!-- #post-x -->
 								</main><!-- .site-main -->
 
@@ -1787,8 +1784,7 @@
 										<div id="search-3"
 											class="widget sidebar-widget zeen-widget clearfix widget_search">
 											<h3 class="widget-title title">Search</h3>
-											<form method="get" class="search tipi-flex"
-												action="">
+											<form method="get" class="search tipi-flex" action="">
 												<input type="search" class="search-field font-b" placeholder="Search"
 													value="" name="s" autocomplete="off">
 												<button class="tipi-i-search-thin search-submit" type="submit"
@@ -1800,7 +1796,7 @@
 											<h3 class="widget-title title">About</h3>
 											<div class="zeen-about-me about_me__img--round">
 												<div class="about_me__img"><img
-														src="wp-content/uploads/2018/09/Living-at-300-Main-Logo.png"
+														src="/wp-content/uploads/2018/09/Living-at-300-Main-Logo.png"
 														srcset="" alt=""></div>
 
 												<div class="about_me__content">
@@ -2814,17 +2810,17 @@
 					<div class="suggestions-wrap font-2"><a href="tag/downtown-winnipeg/"
 							class="tag-cloud-link tag-link-179 tag-link-position-1" style="font-size: 12px;">Downtown
 							Winnipeg</a>
-						<a href="tag/winnipeg-apartments/"
-							class="tag-cloud-link tag-link-244 tag-link-position-2" style="font-size: 12px;">Winnipeg
+						<a href="tag/winnipeg-apartments/" class="tag-cloud-link tag-link-244 tag-link-position-2"
+							style="font-size: 12px;">Winnipeg
 							Apartments</a>
-						<a href="tag/apartment-living/"
-							class="tag-cloud-link tag-link-448 tag-link-position-3" style="font-size: 12px;">Apartment
+						<a href="tag/apartment-living/" class="tag-cloud-link tag-link-448 tag-link-position-3"
+							style="font-size: 12px;">Apartment
 							Living</a>
 						<a href="tag/apartment-building-in-downtown-winnipeg/"
 							class="tag-cloud-link tag-link-1275 tag-link-position-4" style="font-size: 12px;">Apartment
 							Building in Downtown Winnipeg</a>
-						<a href="tag/downtown-apartments/"
-							class="tag-cloud-link tag-link-475 tag-link-position-5" style="font-size: 12px;">Downtown
+						<a href="tag/downtown-apartments/" class="tag-cloud-link tag-link-475 tag-link-position-5"
+							style="font-size: 12px;">Downtown
 							Apartments</a>
 					</div>
 				</div>
@@ -2850,8 +2846,7 @@
 			<div class="content-lwa content-block site-img-1 site-skin-2">
 				<div class="tipi-modal-bg bg-area">
 					<div class="lwa lwa-default">
-						<form class="lwa-form" action="wp-login.php?template=default"
-							method="post">
+						<form class="lwa-form" action="wp-login.php?template=default" method="post">
 							<div>
 								<span class="lwa-status"></span>
 								<table>
@@ -2893,8 +2888,7 @@
 								</table>
 							</div>
 						</form>
-						<form class="lwa-remember"
-							action="wp-login.php?action=lostpassword&#038;template=default"
+						<form class="lwa-remember" action="wp-login.php?action=lostpassword&#038;template=default"
 							method="post" style="display:none;">
 							<div>
 								<span class="lwa-status"></span>
@@ -3025,24 +3019,21 @@
 			background: #068587;
 		}
 	</style>
-	<script type='text/javascript'
-		src='wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.4'
+	<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.4'
 		id='swv-js'></script>
 	<script type='text/javascript' id='contact-form-7-js-extra'>
 		/* <![CDATA[ */
 		var wpcf7 = { "api": { "root": "https:\/\/livingat300main.ca\/wp-json\/", "namespace": "contact-form-7\/v1" } };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.4'
+	<script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.4'
 		id='contact-form-7-js'></script>
 	<script type='text/javascript' id='lets-review-js-ext-js-extra'>
 		/* <![CDATA[ */
 		var letsReview = { "letsReviewLb": "1" };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/plugins/lets-review/frontend/js/lets-review-ext.js?ver=2.5.6'
+	<script type='text/javascript' src='/wp-content/plugins/lets-review/frontend/js/lets-review-ext.js?ver=2.5.6'
 		id='lets-review-js-ext-js'></script>
 	<script type='text/javascript' id='lets-review-js-js-extra'>
 		/* <![CDATA[ */
@@ -3050,67 +3041,51 @@
 /* ]]> */
 	</script>
 	<script type='text/javascript'
-		src='wp-content/plugins/lets-review/frontend/js/lets-review-scripts.min.js?ver=2.5.6'
+		src='/wp-content/plugins/lets-review/frontend/js/lets-review-scripts.min.js?ver=2.5.6'
 		id='lets-review-js-js'></script>
 	<script type='text/javascript' id='ppress-frontend-script-js-extra'>
 		/* <![CDATA[ */
 		var pp_ajax_form = { "ajaxurl": "https:\/\/livingat300main.ca\/wp-admin\/admin-ajax.php", "confirm_delete": "Are you sure?", "deleting_text": "Deleting...", "deleting_error": "An error occurred. Please try again.", "nonce": "f1ffc4e6f0", "disable_ajax_form": "false", "is_checkout": "0", "is_checkout_tax_enabled": "0" };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.3.0'
+	<script type='text/javascript' src='/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.3.0'
 		id='ppress-frontend-script-js'></script>
 	<script type='text/javascript' id='lets-live-blog-js-js-extra'>
 		/* <![CDATA[ */
 		var letsLiveBlogJs = { "root": "https:\/\/livingat300main.ca\/wp-json\/", "nonce": "d0b85216f0", "root_point": "codetipi-lets-live-blog\/v1", "root_full": "https:\/\/livingat300main.ca\/wp-json\/codetipi-lets-live-blog\/v1\/", "pagiRoot": "\/gardens-to-visit-in-winnipeg\/", "data": { "pid": 9920, "timeInterval": 10000, "i18n": { "ok": "OK", "warning": "Warning", "delete": "Delete", "jumphl": "Jump to highlight", "edit": "Edit", "live": "Live", "ended": "Finished", "starting": "Not started", "disabled": "Broadcasting Off", "publish": "Publish", "cancel": "Cancel", "success": "Success", "successD": "Entry was deleted.", "confirmD": "This will permanently delete this entry. Continue?", "update": "Update", "start": "Start broadcast", "stop": "Stop broadcast", "highlight": "Highlight", "highlightinput": "Summary of highlight" } } };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/plugins/lets-live-blog/frontend/js/functions.min.js?ver=1.0.2'
+	<script type='text/javascript' src='/wp-content/plugins/lets-live-blog/frontend/js/functions.min.js?ver=1.0.2'
 		id='lets-live-blog-js-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/gsap/TweenLite.min.js?ver=1.20.5'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/gsap/TweenLite.min.js?ver=1.20.5'
 		id='tween-lite-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/gsap/CSSPlugin.min.js?ver=1.20.5'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/gsap/CSSPlugin.min.js?ver=1.20.5'
 		id='css-plugin-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/gsap/ScrollToPlugin.min.js?ver=1.20.5'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/gsap/ScrollToPlugin.min.js?ver=1.20.5'
 		id='scroll-to-plugin-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/cookie.min.js?ver=2.1.3'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/cookie.min.js?ver=2.1.3'
 		id='cookie-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/flickity.pkgd.min.js?ver=2.1.2'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/flickity.pkgd.min.js?ver=2.1.2'
 		id='flickity-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/flickity-full-screen.min.js?ver=1.0.1'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/flickity-full-screen.min.js?ver=1.0.1'
 		id='flickity-full-screen-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/hoverIntent.min.js?ver=1.9.0'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/hoverIntent.min.js?ver=1.9.0'
 		id='hover-intent-js'></script>
-	<script type='text/javascript' src='wp-includes/js/imagesloaded.min.js?ver=4.1.4'
-		id='imagesloaded-js'></script>
-	<script type='text/javascript' src='wp-includes/js/masonry.min.js?ver=4.2.2'
-		id='masonry-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/obs.min.js?ver=1.0.0' id='obs-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/scrollmagic.min.js?ver=2.0.5'
+	<script type='text/javascript' src='/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+	<script type='text/javascript' src='/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/obs.min.js?ver=1.0.0' id='obs-js'></script>
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/scrollmagic.min.js?ver=2.0.5'
 		id='scroll-magic-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/sticky-kit.min.js?ver=2.2.3'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/sticky-kit.min.js?ver=2.2.3'
 		id='sticky-kit-js'></script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/swipebox.min.js?ver=1.4.4'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/swipebox.min.js?ver=1.4.4'
 		id='swipebox-js'></script>
 	<script type='text/javascript' id='zeen-functions-js-extra'>
 		/* <![CDATA[ */
 		var zeenJS = { "root": "\/wp-json\/codetipi-zeen\/v1\/", "nonce": "d0b85216f0", "qry": { "page": 0, "name": "gardens-to-visit-in-winnipeg", "error": "", "m": "", "p": 0, "post_parent": "", "subpost": "", "subpost_id": "", "attachment": "", "attachment_id": 0, "pagename": "", "page_id": 0, "second": "", "minute": "", "hour": "", "day": 0, "monthnum": 0, "year": 0, "w": 0, "category_name": "", "tag": "", "cat": "", "tag_id": "", "author": "", "author_name": "", "feed": "", "tb": "", "paged": 0, "meta_key": "", "meta_value": "", "preview": "", "s": "", "sentence": "", "title": "", "fields": "", "menu_order": "", "embed": "", "category__in": [], "category__not_in": [], "category__and": [], "post__in": [], "post__not_in": [], "post_name__in": [], "tag__in": [], "tag__not_in": [], "tag__and": [], "tag_slug__in": [], "tag_slug__and": [], "post_parent__in": [], "post_parent__not_in": [], "author__in": [], "author__not_in": [], "ignore_sticky_posts": false, "suppress_filters": false, "cache_results": true, "update_post_term_cache": true, "lazy_load_term_meta": true, "update_post_meta_cache": true, "post_type": "", "posts_per_page": 10, "nopaging": false, "comments_per_page": "50", "no_found_rows": false, "order": "DESC" }, "args": { "sDelay": 5000, "subL": false, "lazy": true, "iconSorter": "<i class='tipi-i-chevron-down'><\/i>", "iplComs": false, "heroFade": 0.075, "iplMob": true, "fbComs": false, "lightbox": true, "disqus": false, "subCookie": true, "pluginsUrl": "https:\/\/livingat300main.ca\/wp-content\/plugins", "frontpage": false, "ipl": ["lets-review\/frontend\/js\/lets-review-scripts.min.js"] }, "i18n": { "embedError": "There was a problem with your embed code. Please refer to the documentation for help.", "loadMore": "Load More", "noMore": "No More Content" } };
 /* ]]> */
 	</script>
-	<script type='text/javascript'
-		src='wp-content/themes/zeen/assets/js/functions.min.js?ver=1.4'
+	<script type='text/javascript' src='/wp-content/themes/zeen/assets/js/functions.min.js?ver=1.4'
 		id='zeen-functions-js'></script>
 	<script type='text/javascript' id='zeen-functions-js-after'>
 		var zeen_395 = {
@@ -3222,8 +3197,7 @@
 		};
 
 	</script>
-	<script type='text/javascript' src='wp-includes/js/comment-reply.min.js?ver=6.0.3'
-		id='comment-reply-js'></script>
+	<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=6.0.3' id='comment-reply-js'></script>
 	<script type='text/javascript'>
 		window.__lo_site_id = 141395;
 
