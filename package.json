@@ -17,6 +17,7 @@
     "flexsearch": "^0.7.31",
     "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
+    "lodash": "^4.17.21",
     "require-from-string": "^2.0.2",
     "sqlite3": "^5.1.2"
   },

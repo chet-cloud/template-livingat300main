@@ -89,7 +89,7 @@ async function get_posts_in_category(category_id, index){
         const data = cache[category_id]
         return set_posts_in_category(data,index,category_id)
     }else{
-        return await fetch("data/category."+category_id+".json").then(r=>r.json()).then((data)=>{
+        return await fetch("/data/category."+category_id+".json").then(r=>r.json()).then((data)=>{
             cache[category_id] = data
             return set_posts_in_category(data,index,category_id)
         })
