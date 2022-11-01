@@ -1,0 +1,57 @@
+<script>
+    const template = ({image_url, slug, title, isNext})=>{
+        return `
+        <div class="prev-block prev-next-block clearfix">
+            <div class="mask" style="width:50px; height:50px">
+                <a href="preparing-your-cat-to-move-into-a-new-home/">
+                    <i class="tipi-i-long-left"></i>
+                    <img width="100" height="100" style="width:50px; height:50px"
+                        src="/wp-content/themes/zeen/assets/img/lazy.png"
+                        data-zeen-src="${image_url}"
+                        class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
+                        alt="" loading="lazy"
+                        />
+                </a>
+            </div>
+            <div class="meta">
+                <a href="preparing-your-cat-to-move-into-a-new-home/"
+                    class="${isNext?'next':'previous'}-title title">
+                    <span>${isNext?'Next':'Previous'} </span>
+                    Preparing Your Cat To Move Into a New Home </a>
+            </div>
+        </div>
+        `
+    }
+
+    module.exports = function(data){
+        const {loadPosts} = require('./lib/data.js')
+        const result = [null,null]
+        const posts = loadPosts()
+        posts.filter((v,i)=>{
+            if(data.id === v.id){
+                if((i-1) >= 0) {
+                    result[0] = posts[i-1]
+                    result[0]['isNext'] = false
+                }
+                if((i+1) < posts.length) {
+                    result[1] = posts[i+1]
+                    result[1]['isNext'] = true
+                }
+                return true
+            }
+        })
+        const content = result.map(p=>{
+            return p===null? "" : template({
+                image_url: p.yoast_head_json.og_image[0].url, 
+                slug:p.slug,
+                title:p.title.rendered,
+                isNext:p.isNext
+            })
+        }).join("")
+        return {content}
+    }
+</script>
+
+<div class="next-prev-posts clearfix">
+     ${data.content}
+</div>

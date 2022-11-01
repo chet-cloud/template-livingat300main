@@ -6,7 +6,7 @@
 
         result = result.map((p)=>{
             //<a href="/category/300-main/" class="cat">300 Main</a>
-            p['categories'] = p.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`)
+            p['categories'] = p.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`).join("")
             return p
         })
         result = result.map((p)=>{
