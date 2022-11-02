@@ -1,0 +1,341 @@
+<script>
+    module.exports = function (data) {
+        const article_temple = require('./include/category_posts.js')
+        const result = data.posts.map((p,i)=>article_temple(p,i)).join("")
+        return {result}
+    }
+    // ${data.result}
+</script>
+
+
+<div class="block block-24 clearfix preview-review-bot meta-overlay-0">
+    <div class="block-masonry block-masonry-2" id="body_posts">
+        
+        ${data.result}
+        
+<!-- 
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-0 preview-classic preview-24 img-ani-1 elements-design-1 post-10314 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants category-lifestyle tag-downtown-winnipeg tag-downtown-winnipeg-restaurants tag-winnipeg-restaurants">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/275864305_497564391750898_2848710138243712305_n-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/275864305_497564391750898_2848710138243712305_n-770x513.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/275864305_497564391750898_2848710138243712305_n-370x247.jpg 370w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp;Restaurants</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-07-26T18:13:06+00:00">July 26, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">Top 5 Food &#038;Drink Spots in Winnipeg this Summer</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Winnipeg is well known for its great food, craft beers, and innovative restaurants. There are many great spots to go... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/top-5-food-drink-spots-in-winnipeg-this-summer/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-1 preview-classic preview-24 img-ani-1 elements-design-1 post-10226 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants category-lifestyle tag-apartment-living-winnipeg tag-cocktails tag-summer">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/top-10-summer-cocktails/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-770x513.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-370x247.jpg 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-1155x770.jpg 1155w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp;Restaurants</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-07-13T20:44:24+00:00">July 13, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/top-10-summer-cocktails/">Top 10 Summer Cocktails</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        The perfect Summer day calls for the perfected Summer cocktail. Beat the Winnipeg heat this Summer by staying cool with... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/top-10-summer-cocktails/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-2 preview-classic preview-24 img-ani-1 elements-design-1 post-7899 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-lifestyle tag-birds-hill-park tag-churchill tag-explore-manitoba tag-gimli tag-living-in-manitoba tag-riding-mountain-park tag-spring-in-manitoba tag-weekend-getaways">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-770x513.png" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-770x513.png 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-370x247.png 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/05/Post1-1-1155x770.png 1155w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/adventure/" class="cat">Adventure</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-05-06T18:51:12+00:00">May 6, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/">Spring Getaways in Manitoba</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Manitoba is full of amazing adventures not only just within the walls of Winnipeg but outside of them as well,... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/weekend-getaways-manitoba-spring-edition/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-3 preview-classic preview-24 img-ani-1 elements-design-1 post-7581 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/spring-cleaning-your-life/" class="mask-img">
+                        <img width="585" height="585" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-585x585.png" class="attachment-zeen-585-585 size-zeen-585-585 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-585x585.png 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-100x100.png 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-293x293.png 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-390x390.png 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-900x900.png 900w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-500x500.png 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/spr1-200x200.png 200w" sizes="(max-width: 585px) 100vw, 585px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-03-31T15:00:02+00:00">March 31, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/spring-cleaning-your-life/">Spring Cleaning Your Life</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Making changes to our daily schedules and changing old habits can be hard and overwhelming, which is why using a... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/spring-cleaning-your-life/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-4 preview-classic preview-24 img-ani-1 elements-design-1 post-7564 post type-post status-publish format-standard has-post-thumbnail hentry category-apartment category-apartment-hacks category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/spring-towards-a-better-smelling-home-and-a-better-you/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-770x513.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-300x199.jpg 300w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-500x332.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-370x247.jpg 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-1155x770.jpg 1155w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-293x195.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/03/featured-1400x930.jpg 1400w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/apartment/" class="cat">Apartment</a>
+                            <a href="https://livingat300main.ca/category/apartment-hacks/" class="cat">Apartment Hacks</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-03-17T17:02:57+00:00">March 17, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/spring-towards-a-better-smelling-home-and-a-better-you/">Spring towards a better smelling home &#8211;and a better you</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Our mood and energy levels can be impacted greatly by how our environment smells. If your living space smells great,... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/spring-towards-a-better-smelling-home-and-a-better-you/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-5 preview-classic preview-24 img-ani-1 elements-design-1 post-7465 post type-post status-publish format-standard has-post-thumbnail hentry category-300-main category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/benefits-of-living-in-a-central-location/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-770x512.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-300x199.jpg 300w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-1024x681.jpg 1024w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-1536x1021.jpg 1536w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-2048x1362.jpg 2048w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-500x332.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-370x247.jpg 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-1155x770.jpg 1155w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-293x195.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/02/city-2021-08-29-14-37-25-utc-1400x931.jpg 1400w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/300-main/" class="cat">300 Main</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-03-03T19:02:46+00:00">March 3, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/benefits-of-living-in-a-central-location/">Benefits of Living in a Central Location</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Many people believe that downtown living is about rigid, concrete walls and tall buildings. But what many don &#8217;t realize are... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/benefits-of-living-in-a-central-location/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-6 preview-classic preview-24 img-ani-1 elements-design-1 post-7136 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/the-best-vegan-recipes-to-cook-in-a-snowy-day/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/10/cover-770x513.png" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/10/cover-770x513.png 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/10/cover-370x247.png 370w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp;Restaurants</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2022-02-22T21:53:15+00:00">February 22, 2022</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/the-best-vegan-recipes-to-cook-in-a-snowy-day/">The Best Vegan Recipes to Cook in a Snowy Day</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        I know… it &#8217;s still winter in Winnipeg… and I &#8217;ve never seen so much snow in my life. Living in Winnipeg... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/the-best-vegan-recipes-to-cook-in-a-snowy-day/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-7 preview-classic preview-24 img-ani-1 elements-design-1 post-7330 post type-post status-publish format-standard has-post-thumbnail hentry category-environment category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/top-5-new-years-resolutions-that-are-actually-worth-keeping/" class="mask-img">
+                        <img width="585" height="585" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-585x585.jpg" class="attachment-zeen-585-585 size-zeen-585-585 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-900x900.jpg 900w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-500x500.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/b1-200x200.jpg 200w" sizes="(max-width: 585px) 100vw, 585px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/environment/" class="cat">Environment</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2021-12-31T15:22:32+00:00">December 31, 2021</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/top-5-new-years-resolutions-that-are-actually-worth-keeping/">Top 5 New Year &#8217;s resolutions that are actually worth keeping</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Happy new year! Are you thinking about setting resolutions for 2022? With all the lockdown and pandemic talk (still) happening,... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/top-5-new-years-resolutions-that-are-actually-worth-keeping/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-8 preview-classic preview-24 img-ani-1 elements-design-1 post-7219 post type-post status-publish format-standard has-post-thumbnail hentry category-culture category-decor category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/decorating-ideas-to-create-your-own-winter-wonderland/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-770x514.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-300x200.jpg 300w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-1024x683.jpg 1024w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-500x333.jpg 500w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-370x247.jpg 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-1155x770.jpg 1155w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7-293x195.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/winter7.jpg 1366w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/culture/" class="cat">Culture</a>
+                            <a href="https://livingat300main.ca/category/decor/" class="cat">Decor</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2021-12-23T21:48:41+00:00">December 23, 2021</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/decorating-ideas-to-create-your-own-winter-wonderland/">Decorating Ideas to Create your own Winter Wonderland</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        Winter is just around the corner, and this is the most beautiful season for many winter-lovers. Houses covered with snow,... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/decorating-ideas-to-create-your-own-winter-wonderland/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="tipi-xs-12 elements-location-1 clearfix with-fi ani-base article-ani article-ani-1 tipi-s-typo masonry-child stack-1 stack-design-1 separation-border loop-9 preview-classic preview-24 img-ani-1 elements-design-1 post-7320 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants category-lifestyle tag-apartment tag-apartment-building tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-apartments tag-downtown-living tag-downtown-winnipeg tag-living-in-downtown-winnipeg tag-winnipeg-apartments">
+            <div class="preview-mini-wrap clearfix">
+                <div class="mask">
+                    <a href="https://livingat300main.ca/5-ways-to-use-your-slow-cooker-in-the-winter/" class="mask-img">
+                        <img width="770" height="513" src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/sc5-770x513.jpg" class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt="" loading="lazy" srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/sc5-770x513.jpg 770w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/sc5-370x247.jpg 370w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2021/12/sc5-1155x770.jpg 1155w" sizes="(max-width: 770px) 100vw, 770px"/>
+                    </a>
+                </div>
+                <div class="meta">
+                    <div class="byline byline-2 byline-cats-design-1">
+                        <div class="byline-part cats">
+                            <a href="https://livingat300main.ca/category/food-restaurants/" class="cat">Food &amp;Restaurants</a>
+                            <a href="https://livingat300main.ca/category/lifestyle/" class="cat">Lifestyle</a>
+                        </div>
+                        <span class="byline-part separator">&middot;</span>
+                        <span class="byline-part date">
+                            <time class="entry-date published dateCreated" datetime="2021-12-20T15:14:29+00:00">December 20, 2021</time>
+                        </span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <a href="https://livingat300main.ca/5-ways-to-use-your-slow-cooker-in-the-winter/">5 ways to use your slow cooker in the winter</a>
+                        </h3>
+                    </div>
+                    <div class="excerpt body-color">
+                        For me, winter is a time that is defined by two words: comfort and cozy. I prefer to hunker down... 
+                        <span class="read-more-wrap font-3">
+                            <a class="read-more" href="https://livingat300main.ca/5-ways-to-use-your-slow-cooker-in-the-winter/">Read More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </article>
+-->
+
+    </div>
+</div>

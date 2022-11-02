@@ -1,0 +1,30 @@
+<script>
+    module.exports = function({author}){
+        const {loadUsers} = require('./lib/data.js')
+        const user = loadUsers().filter(u=>u.id === author)[0]
+        return {user}
+    }
+</script>
+
+
+<div class="user-page-box-1 user-box-type-1 tipi-xs-12 user-page-box clearfix">
+    <div class="mask">
+        <a href="${data.user.link}">
+            <span class="overlay-arrow-r overlay-arrow"><i
+                    class="tipi-i-long-right"></i></span>
+        </a>
+    </div>
+    <div class="meta">
+        <div class="author-info-wrap">
+            <div class="author-name font-1"><a
+                    href="${data.user.link}">${data.user.name}</a></div>
+        </div>
+        <div class="author-right-meta">
+            <div class="author-bio body-color link-color-wrap">
+                ${data.user.description}
+            </div>
+            <div class="icons">
+            </div>
+        </div>
+    </div>
+</div>

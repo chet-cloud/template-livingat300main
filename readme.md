@@ -78,11 +78,13 @@ No inject  https://thejohnstonterminal.com/wp-includes/js/jquery/jquery.min.js,
 
 "reportFeedback": "https://feedback.smartscreen.microsoft.com/feedback.aspx?v=6&t=4&result=block&type=top&url=bGl2aW5nYXQzMDBtYWluLmNhL3dwLWNvbnRlbnQvcGx1Z2lucy93cC11c2VyLWF2YXRhci9hc3NldHMvZmxhdHBpY2tyL2ZsYXRwaWNrci5taW4uanM%3D
 
-https://livingat300main.ca/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js
+No inject  https://livingat300main.ca/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js
  - original https://wordpress.org/plugins/wp-user-avatar/
 
-https://livingat300main.ca/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js
+No inject  https://livingat300main.ca/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js
  - original https://wordpress.org/plugins/wp-user-avatar/
+
+
 
 # https://thejohnstonterminal.com
 
@@ -97,6 +99,3 @@ No inject https://winnipegsquare.ca/wp-content/plugins/bj-lazy-load/js/bj-lazy-l
 
 
 
-
-c=s.exec(a),c&&(d=h(f()+"//www.youtube"+(c[2]||"")+".com/embed/"+c[4],b.extend({autoplay:1},g(c[5]||"")))),c=t.exec(a),c&&(d=h(f()+"//player.vimeo.com/video/"+c[3],b.extend({autoplay:1},g(c[4]||"")))),c=u.exec(a),c&&(d=h(f()+"//www.google."+c[3]+"/maps?"+c[6],{output:c[6].indexOf("layer=c")>0?"svembed":"embed"})),'<div
-c=s.exec(a),c&&(d=h(f()+"//www.youtube"+(c[2]||"")+".com/embed/"+c[4],b.extend({autoplay:1,rel:0},g(c[5]||"")))),c=t.exec(a),c&&(d=h(f()+"//player.vimeo.com/video/"+c[3],b.extend({autoplay:1},g(c[4]||"")))),c=u.exec(a),c&&(d=h(f()+"//www.google."+c[3]+"/maps?"+c[6],{output:c[6].indexOf("layer=c")>0?"svembed":"embed"})),'<div

@@ -1,0 +1,82 @@
+<script>
+    module.exports = function ({ post }) {
+        const { loadComments } = require('./lib/data.js')
+        const comments = loadComments().filter(u => u.id === post)
+        return { comments }
+    }
+</script>
+
+<div id="comments" class="comments-area">
+    <h2 class="comments-title footer-block-title"> One Comment </h2>
+
+    <ol class="comment-list">
+        <li id="comment-2766" class="comment even thread-even depth-1 parent">
+
+            <article id="div-comment-2766" class="comment-body">
+                <footer class="comment-meta">
+                    <div class="comment-author vcard">
+                        <img alt=''
+                            src='https://secure.gravatar.com/avatar/4703f4934e19ba550c450894473e2942?s=130&#038;d=mm&#038;r=g'
+                            srcset='https://secure.gravatar.com/avatar/4703f4934e19ba550c450894473e2942?s=260&#038;d=mm&#038;r=g 2x'
+                            class='avatar avatar-130 photo' height='130' width='130' loading='lazy' /> <b class="fn"><a
+                                href='https://www.catalystcondos.com/' rel='external nofollow ugc'
+                                class='url'>Condominium Management</a></b> <span class="says">says:</span>
+                    </div><!-- .comment-author -->
+
+                    <div class="comment-metadata">
+                        <a href="https://livingat300main.ca/rent-vs-buy-which-is-right-for-you/#comment-2766"><time
+                                datetime="2019-06-28T16:45:05+00:00">June 28, 2019 at 4:45 pm</time></a>
+                    </div><!-- .comment-metadata -->
+
+                </footer><!-- .comment-meta -->
+
+                <div class="comment-content">
+                    <p>I’m living in a rented condo since last 2 years. But I really want to buy my own now. I’ve
+                        finally saved enough and I think it’s a good investment. Also, you always have the option to
+                        resell it so it’s all fine.</p>
+                </div><!-- .comment-content -->
+
+                <div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-2766'
+                        data-commentid="2766" data-postid="3336" data-belowelement="div-comment-2766"
+                        data-respondelement="respond" data-replyto="Reply to Condominium Management"
+                        aria-label='Reply to Condominium Management'>Reply</a></div>
+            </article><!-- .comment-body -->
+
+
+            <ol class="children">
+                <li id="comment-2770" class="comment byuser comment-author-arianne odd alt depth-2">
+
+                    <article id="div-comment-2770" class="comment-body">
+                        <footer class="comment-meta">
+                            <div class="comment-author vcard">
+                                <img alt=''
+                                    src='https://secure.gravatar.com/avatar/ceb2ceefa1e7f2162426eba3548428af?s=130&#038;d=mm&#038;r=g'
+                                    srcset='https://secure.gravatar.com/avatar/ceb2ceefa1e7f2162426eba3548428af?s=260&#038;d=mm&#038;r=g 2x'
+                                    class='avatar avatar-130 photo' height='130' width='130' loading='lazy' /> <b
+                                    class="fn">Arianne Yuson</b> <span class="says">says:</span>
+                            </div><!-- .comment-author -->
+
+                            <div class="comment-metadata">
+                                <a href="https://livingat300main.ca/rent-vs-buy-which-is-right-for-you/#comment-2770"><time
+                                        datetime="2019-06-28T17:01:51+00:00">June 28, 2019 at 5:01 pm</time></a>
+                            </div><!-- .comment-metadata -->
+
+                        </footer><!-- .comment-meta -->
+
+                        <div class="comment-content">
+                            <p>Wow congratulations! That&#8217;s right, do whatever&#8217;s best for you!</p>
+                        </div><!-- .comment-content -->
+
+                        <div class="reply"><a rel='nofollow' class='comment-reply-link' href='#comment-2770'
+                                data-commentid="2770" data-postid="3336" data-belowelement="div-comment-2770"
+                                data-respondelement="respond" data-replyto="Reply to Arianne Yuson"
+                                aria-label='Reply to Arianne Yuson'>Reply</a></div>
+                    </article><!-- .comment-body -->
+                    
+                </li><!-- #comment-## -->
+            </ol><!-- .children -->
+        </li><!-- #comment-## -->
+    </ol>
+</div><!-- #comments -->
+
+
