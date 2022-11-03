@@ -54,6 +54,8 @@ fse.outputFileSync(`./out/data/posts.all.json`,JSON.stringify(loadPosts()))
 // copy posts.json for browser load
 fse.outputFileSync(`./out/data/categories.all.json`,JSON.stringify(loadCategories()))
 
+// copy users.json for browser load
+fse.copyFileSync(`./data/Users.json`,`./out/data/author.all.json`)
 
 generator("pages","out","public")
 

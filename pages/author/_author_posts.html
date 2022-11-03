@@ -1,0 +1,16 @@
+<script>
+    module.exports = function (data) {
+        const article_temple = require('./pages/author/_author_posts.js')
+        const result = data.posts.map((p,i)=>article_temple(p,i)).join("")
+        return {result}
+    }
+</script>
+
+
+<div class="block block-24 clearfix preview-review-bot meta-overlay-0">
+    <div class="block-masonry block-masonry-2" id="body_posts">
+        
+        ${data.result}
+
+    </div>
+</div>
