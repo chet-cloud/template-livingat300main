@@ -1,6 +1,6 @@
 <script>
     module.exports = function () {
-        const article_template = require('./include/index_api_get_menu.js')
+        const article_template = require('./pages/_index_api_get_menu.js')
         const {getPostByCategoryId} = require('./lib/data.js')
         function get_latest_post_by_category(category_id){
             const data = getPostByCategoryId(category_id,3)

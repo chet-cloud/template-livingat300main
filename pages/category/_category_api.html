@@ -1,16 +1,13 @@
 <script>
     module.exports = function(data){
-        const {cat,getJSONSync} = require('./lib/utils.js')
-        const fse = require('fs-extra')
-        fse.outputFileSync("./out/include/tag_posts.js",cat("include/tag_posts.js"))
-        fse.outputFileSync("./out/include/index_api_get_menu.js",cat("include/index_api_get_menu.js"))
         return data
     }
 </script>
 
 <script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
-<script type='text/javascript' src='/include/index_api_get_menu.js'></script>
-<script type='text/javascript' src='/include/tag_posts.js'></script>
+
+${fn.include_js("_index_api_get_menu.js")}
+${fn.include_js("category/_category_posts.js")}
 
 <script>
     const post_id = ${data.id};
@@ -40,7 +37,7 @@
             usePathnameForAllQueries: true,
             response: {},
             dynamicResponseModFn: async (request, response, queryParamMap) => {
-                const html =  await load_more_by_tag_id(post_id, ++index)
+                const html =  await category_slug_load_more(post_id, ++index)
                 return html + load_more_tail(page_link,index)
             },
         })

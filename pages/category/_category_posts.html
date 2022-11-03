@@ -1,6 +1,6 @@
 <script>
     module.exports = function (data) {
-        const article_temple = require('./include/category_posts.js')
+        const article_temple = require('./pages/category/_category_posts.js')
         const result = data.posts.map((p,i)=>article_temple(p,i)).join("")
         return {result}
     }

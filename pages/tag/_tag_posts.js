@@ -70,12 +70,42 @@ const load_more_tail = ({link, page_number})=>{
 }
 
 
-const getPostByTagId = (tag_id, to, from)=>{
-    //todo 
+const getPostByTagId = (posts, id, to, from)=>{
+    const re =  posts.filter(p=>p.tags.findIndex(result_id=>id===result_id)>0).slice(from?from:0, to)
+    return re
+}
+
+function binarySearch(ar, el, compare_fn) {
+    var m = 0;
+    var n = ar.length - 1;
+    while (m <= n) {
+        var k = (n + m) >> 1;
+        var cmp = compare_fn(el, ar[k]);
+        if (cmp > 0) {
+            m = k + 1;
+        } else if(cmp < 0) {
+            n = k - 1;
+        } else {
+            return k;
+        }
+    }
+    return -m - 1;
+}
+
+let binary_search = function (arr, id) {
+    return binarySearch(arr,{id}, (a,b) => {
+        return a.id - b.id
+    } )
 }
 
 const setCategoriesInPosts = (categories,posts)=>{
-    //todo 
+    return posts.map((post)=>{
+        //setCategories
+        post.categories = post.categories.map(id=>{
+            return {...categories[binary_search(categories,id)]}
+        })
+        return post
+    })
 }
 
 let tags_lite = null, posts_all = null, categories = null
@@ -91,7 +121,7 @@ async function load_more_by_tag_id(tag_id, index){
     }
     const page_size = 10
     const result = tags_lite.map((tag) => {
-        let post_data = getPostByTagId(tag.id, 10, 0)
+        let post_data = getPostByTagId(posts,tag.id, 10, 0)
         post_data = setCategoriesInPosts(categories,post_data).map(p=>{
           p.categories = p.categories.map(c=>{
             return {name:c.name,link:c.link}

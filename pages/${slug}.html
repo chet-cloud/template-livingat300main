@@ -9,8 +9,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-${fn.include("include/head",data)}
-${fn.include("include/slug_api")}
+${fn.include("pages/common/_head",data)}
+${fn.include("pages/_slug_api")}
 
 <body
 	class="post-template-default single single-post postid-9920 single-format-standard multiple-domain-livingat300main-ca headings-f1 body-f2 sub-f1 quotes-f1 by-f2 wh-f2 sm-u13 block-titles-big mob-fi-tall excerpt-mob-off skin-light read-more-fade site-mob-menu-a-4 site-mob-menu-1 mm-submenu-1 main-menu-logo-1 body-header-style-51 body-header-style-50s body-hero-l byline-font-2">
@@ -62,7 +62,7 @@ ${fn.include("include/slug_api")}
 								</div>
 							</div>
 							<ul id="menu-main-menu" class="menu-main-menu horizontal-menu tipi-flex font-3">
-								${fn.include("include/index_top_menu")}
+								${fn.include("pages/_index_top_menu")}
 							</ul>
 							<ul class="horizontal-menu font-3 menu-icons tipi-flex-eq-height">
 
@@ -166,7 +166,7 @@ ${fn.include("include/slug_api")}
 																class="tipi-i-whatsapp"></i></span></a>
 												</div>
 												
-												${fn.include('./include/slug_author',data)}
+												${fn.include('./pages/_slug_author',data)}
 
 												<div class="related-posts-wrap clearfix">
 													<div id="block-wrap-26010"
@@ -196,18 +196,18 @@ ${fn.include("include/slug_api")}
 																	</div>
 																</div>
 																<div class="block block-29 tipi-flex meta-overlay-0">
-																	${fn.include("./include/slug_related_post",data)}
+																	${fn.include("./pages/_slug_related_post",data)}
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 
-												${fn.include('./include/slug_next_pre_posts',data)}
+												${fn.include('./pages/_slug_next_pre_posts',data)}
 
-												<!-- {fn.include('./include/slug_comments',data)} -->
+												<!-- {fn.include('./include/slug_comments',data)}
 
-											</footer><!-- .entry-footer -->
+											</footer> <!-- .entry-footer -->
 									</article><!-- #post-x -->
 								</main><!-- .site-main -->
 

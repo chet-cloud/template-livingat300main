@@ -2,7 +2,7 @@
     module.exports = function(){
         const {getLastedPost} = require('./lib/data.js')
         const post_data = getLastedPost(8)
-        const template_posts = require('./include/index_api_load_more_posts.js')
+        const template_posts = require('./pages/_index_api_load_more_posts.js')
         const posts = template_posts(post_data)
         return {posts}
     }

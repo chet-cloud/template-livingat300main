@@ -1,18 +1,18 @@
 <script>
-    module.exports = function(){
-        const {cat} = require('./lib/utils.js')
-        const fse = require('fs-extra')
-        fse.outputFileSync("./out/include/index_api_load_more_posts.js",cat("include/index_api_load_more_posts.js"))
-        fse.outputFileSync("./out/include/index_api_get_menu.js",cat("include/index_api_get_menu.js"))
-        return {}
+    module.exports = function(data){
+        return data
     }
 </script>
 
 <script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
-<script type='text/javascript' src='/include/index_api_get_menu.js'></script>
-<script type='text/javascript' src='/include/index_api_load_more_posts.js'></script>
+
+ ${fn.include_js("_index_api_get_menu.js")}
+ ${fn.include_js("tag/_tag_posts.js")}
 
 <script>
+    const post_id = ${data.id};
+    const page_link = '${data.link}'; 
+
     document.addEventListener("DOMContentLoaded", function(event) {
 
         MockRequests.setDynamicMockUrlResponse('/wp-json/codetipi-zeen/v1/block',{
@@ -23,7 +23,7 @@
                 const paged = queryParamMap["paged"]
                 console.log(queryParamMap)
                 if(type ==="1"){
-                    return load_more_posts(paged)
+                    return null
                 }else if(type ==="2"){
                     return await get_posts_in_category(queryParamMap['data[args][cat]'], paged)
                 }
@@ -32,13 +32,15 @@
     })
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        MockRequests.setDynamicMockUrlResponse('/wp-json/codetipi-zeen/v1/s',{
+        let index = 1;
+        MockRequests.setDynamicMockUrlResponse('/wp-json/codetipi-zeen/v1/pagi',{
             usePathnameForAllQueries: true,
             response: {},
-            dynamicResponseModFn: (request, response, queryParamMap) => {
-                console.log(queryParamMap)
-                return response;
+            dynamicResponseModFn: async (request, response, queryParamMap) => {
+                const html =  await load_more_by_tag_id(post_id, ++index)
+                return html + load_more_tail(page_link,index)
             },
         })
     })
+
 </script>

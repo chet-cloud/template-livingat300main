@@ -2,15 +2,15 @@
     module.exports = function(){
         const {cat} = require('./lib/utils.js')
         const fse = require('fs-extra')
-        fse.outputFileSync("./out/include/index_api_get_menu.js",cat("include/index_api_get_menu.js"))
-        fse.outputFileSync("./out/include/slug_related_post.js",cat("include/slug_related_post.js"))
+        fse.outputFileSync("./out/_index_api_get_menu.js",cat("pages/_index_api_get_menu.js"))
+        fse.outputFileSync("./out/_slug_related_post.js",cat("pages/_slug_related_post.js"))
         return {}
     }
 </script>
 
 <script type='text/javascript' src='/js/interceptor/mock_request.js'></script>
-<script type='text/javascript' src='/include/index_api_get_menu.js'></script>
-<script type='text/javascript' src='/include/slug_related_post.js'></script>
+<script type='text/javascript' src='/_index_api_get_menu.js'></script>
+<script type='text/javascript' src='/_slug_related_post.js'></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {

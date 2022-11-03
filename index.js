@@ -1,6 +1,7 @@
 const generator = require("./lib/generator.js")
 const fse = require('fs-extra')
-const {loadPosts,loadTags,getJSONSync,loadCategories,setCategoriesInPosts} = require("./lib/data.js")
+const {loadPosts,loadCategories,setCategoriesInPosts} = require("./lib/data.js")
+const {getJSONSync}  = require("./lib/utils.js")
 var _= require('lodash');
 
 
@@ -19,7 +20,6 @@ loadCategories().map(({id})=>{
     const posts = loadPosts().filter(v=> v.categories.findIndex(i=>i===id) > 0)
     fse.outputFileSync(`./out/data/category.${id}.json`,JSON.stringify(posts))
 })
-
 
 
 //related posts
@@ -45,7 +45,7 @@ loadPosts().map(p=>{
 })
 
 // copy Tags.json for browser load
-const tags = getJSONSync("./out/data/Tags.json").map(({id,link,name})=>{id,link,name})
+const tags = getJSONSync("./data/Tags.json").map(({id,link,name})=>{return {id,link,name}})
 fse.outputFileSync("./out/data/tags_lite.json",JSON.stringify(tags))
 
 // copy posts.json for browser load

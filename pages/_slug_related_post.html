@@ -2,7 +2,7 @@
     module.exports = function(data){
         const {getJSONSync} = require('./lib/utils.js')
         const post_with_related_posts = getJSONSync(`out/data/related_posts.${data.id}.json`)
-        const template = require('./include/slug_related_post.js')
+        const template = require('./pages/_slug_related_post.js')
         related_posts = post_with_related_posts['related_posts'].slice(0,4)
         const result = related_posts.map(post=>template(post)).join("")
         return {result}

@@ -27,8 +27,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-${fn.include('./include/head',data)}
-${fn.include("include/category_api",data)}
+${fn.include('./pages/common/_head',data)}
+${fn.include("./pages/category/_category_api",data)}
 
 <body
   class="archive category category-lifestyle category-29 multiple-domain-livingat300main-ca headings-f1 body-f2 sub-f1 quotes-f1 by-f2 wh-f2 sm-u13 block-titles-big mob-fi-tall excerpt-mob-off skin-light read-more-fade site-mob-menu-a-4 site-mob-menu-1 mm-submenu-1 main-menu-logo-1 body-header-style-2 byline-font-2">
@@ -94,7 +94,7 @@ ${fn.include("include/category_api",data)}
                 </div>
               </div>
 							<ul id="menu-main-menu" class="menu-main-menu horizontal-menu tipi-flex font-3">
-								${fn.include("include/index_top_menu")}
+								${fn.include("./pages/_index_top_menu")}
 							</ul>
               <ul class="horizontal-menu font-3 menu-icons tipi-flex-eq-height">
 
@@ -140,7 +140,7 @@ ${fn.include("include/category_api",data)}
                     data-id="0">
                     <div class="tipi-row-inner-style clearfix">
                       <div class="tipi-row-inner-box contents">
-                          ${fn.include('./include/category_posts',data)}
+                          ${fn.include('./pages/category/_category_posts',data)}
                           <div class="inf-load-more-wrap pagination clearfix inf-spacer">
                               <a href="https://livingat300main.ca/category/lifestyle/page/2/"
                                   class="inf-load-more block-loader tipi-button tipi-button-border" data-type="2" data-mnp="6" data-title-next=""
