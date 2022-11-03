@@ -1,11 +1,29 @@
 <script>
   module.exports = function () {
 
-    const { getPostByCategoryId, setCategoriesInPosts, loadTags, getPostByTagId, loadCategories } = require('./lib/data.js')
+    const {loadTags, loadPosts, loadCategories } = require('./lib/data.js')
+    const {binarySearch} = require('./lib/utils.js') 
+    const binary_search = (arr, id) => (arr,{id}, (a,b) => {
+      return a.id - b.id
+    })
+    const setCategoriesInPosts = (categories, posts)=>{
+        return posts.map((post)=>{
+            //setCategories
+            post.categories = post.categories.map(id=>{
+                return {...categories[binary_search(categories,id)]}
+            })
+            return post
+        })
+    }
+    const getPostByTagId = (posts,id,to,from)=>{
+      const re = posts.filter(p=>p.tags.findIndex(result_id=>id===result_id)>0).slice(from?from:0, to)
+      return re
+    }
     const categories = loadCategories()
+    const posts = loadPosts()
     const result = loadTags().map((tag) => {
-      let post_data = getPostByTagId(tag.id, 10, 0)
-      post_data = setCategoriesInPosts(post_data).map(p=>{
+      let post_data = getPostByTagId(posts,tag.id, 10, 0)
+      post_data = setCategoriesInPosts(categories,post_data).map(p=>{
         p.categories = p.categories.map(c=>{
           return {name:c.name,link:c.link}
         })
@@ -90,7 +108,7 @@ ${fn.include("./pages/tag/_tag_api",data)}
                 </div>
               </div>
 							<ul id="menu-main-menu" class="menu-main-menu horizontal-menu tipi-flex font-3">
-								${fn.include("./pages/_index_top_menu")}
+								${fn.include_rendered_template("./pages/_index_top_menu")}
 							</ul>
               <ul class="horizontal-menu font-3 menu-icons tipi-flex-eq-height">
 
