@@ -1,24 +1,56 @@
 <script>
-    const template = ({image_url, slug, title, isNext})=>{
-        return `
+    function correct_url(url){
+        const index = url.lastIndexOf('.');
+        return url.substring(0,index) + "-100x100" + url.substring(index)
+    }
+
+    const template = (result)=>{
+
+        const pre = result[0]===null ? '':`
         <div class="prev-block prev-next-block clearfix">
-            <div class="mask" style="width:50px; height:50px">
-                <a href="preparing-your-cat-to-move-into-a-new-home/">
+            <div class="mask">
+                <a href="${result[0].link}">
                     <i class="tipi-i-long-left"></i>
-                    <img width="100" height="100" style="width:50px; height:50px"
-                        src="/wp-content/themes/zeen/assets/img/lazy.png"
-                        data-zeen-src="${image_url}"
-                        class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image"
-                        alt="" loading="lazy"
-                        />
+                    <img width="100" height="100" src="https://livingat300main.ca/wp-content/themes/zeen/assets/img/lazy.png" 
+                    data-zeen-src="${correct_url(result[0].yoast_head_json.og_image[0].url)}" 
+                    class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image" 
+                    alt="" loading="lazy" 
+                    data-zeen-srcset="${correct_url(result[0].yoast_head_json.og_image[0].url)} 100w" data-zeen-sizes="(max-width: 100px) 100vw, 100px"/>
                 </a>
             </div>
             <div class="meta">
-                <a href="preparing-your-cat-to-move-into-a-new-home/"
-                    class="${isNext?'next':'previous'}-title title">
-                    <span>${isNext?'Next':'Previous'} </span>
-                    Preparing Your Cat To Move Into a New Home </a>
+                <a href="${result[0].link}" class="previous-title title">
+                    <span>Previous</span>
+                    ${result[0].title.rendered}		
+                </a>
             </div>
+        </div>
+        `
+
+        const next = result[1]===null ? '':`
+        <div class="next-block prev-next-block clearfix">
+            <div class="mask">
+                <i class="tipi-i-long-right"></i>
+                <a href="${result[1].link}">
+                    <img width="100" height="100" src="https://livingat300main.ca/wp-content/themes/zeen/assets/img/lazy.png" 
+                    data-zeen-src="${correct_url(result[1].yoast_head_json.og_image[0].url)}" 
+                    class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image" 
+                    alt="" loading="lazy" 
+                    data-zeen-srcset="${correct_url(result[1].yoast_head_json.og_image[0].url)} 100w" data-zeen-sizes="(max-width: 100px) 100vw, 100px"/>
+                </a>
+            </div>
+            <div class="meta">
+                <a href="${result[1].link}" class="next-title title">
+                    <span>Next</span>
+                    ${result[1].title.rendered}					
+                </a>
+            </div>
+        </div>
+        `
+
+        return `<div class="next-prev-posts clearfix">
+            ${pre}
+            ${next}
         </div>
         `
     }
@@ -29,29 +61,66 @@
         const posts = loadPosts()
         posts.filter((v,i)=>{
             if(data.id === v.id){
-                if((i-1) >= 0) {
+                if(posts.length === 1){//no next or pre
+                    
+                }if(i=== (posts.length - 1)){ // pre only
                     result[0] = posts[i-1]
-                    result[0]['isNext'] = false
-                }
-                if((i+1) < posts.length) {
+                }else if(i=== 0) {// next only
                     result[1] = posts[i+1]
-                    result[1]['isNext'] = true
+                }else{//next and pre
+                    result[0] = posts[i-1]
+                    result[1] = posts[i+1]
                 }
                 return true
             }
         })
-        const content = result.map(p=>{
-            return p===null? "" : template({
-                image_url: p.yoast_head_json.og_image[0].url, 
-                slug:p.slug,
-                title:p.title.rendered,
-                isNext:p.isNext
-            })
-        }).join("")
-        return {content}
+        return {content:template(result)}
     }
 </script>
+
 
 <div class="next-prev-posts clearfix">
      ${data.content}
 </div>
+<!-- 
+
+<div class="next-prev-posts clearfix">
+    <div class="prev-block prev-next-block clearfix">
+        <div class="mask">
+            <a href="https://livingat300main.ca/top-10-summer-cocktails/">
+                <i class="tipi-i-long-left"></i>
+                <img width="100" height="100" src="https://livingat300main.ca/wp-content/themes/zeen/assets/img/lazy.png" 
+                data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-100x100.jpg" 
+                class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image" 
+                alt="" loading="lazy" 
+                data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-100x100.jpg 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-293x293.jpg 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-390x390.jpg 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-585x585.jpg 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/07/ergd-900x900.jpg 900w" data-zeen-sizes="(max-width: 100px) 100vw, 100px"/>
+            </a>
+        </div>
+        <div class="meta">
+            <a href="https://livingat300main.ca/top-10-summer-cocktails/" class="previous-title title">
+                <span>Previous</span>
+                Top 10 Summer Cocktails					
+            </a>
+        </div>
+    </div>
+    <div class="next-block prev-next-block clearfix">
+        <div class="mask">
+            <i class="tipi-i-long-right"></i>
+            <a href="https://livingat300main.ca/summer-smoothies/">
+                <img width="100" height="100" src="https://livingat300main.ca/wp-content/themes/zeen/assets/img/lazy.png" 
+                data-zeen-src="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-100x100.png" 
+                class="zeen-lazy-load-base zeen-lazy-load attachment-thumbnail size-thumbnail wp-post-image" 
+                alt="" loading="lazy" 
+                data-zeen-srcset="https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-100x100.png 100w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-293x293.png 293w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-390x390.png 390w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-585x585.png 585w, https://arwebstore.blob.core.windows.net/livingat300main-ca/2022/08/blog3-900x900.png 900w" data-zeen-sizes="(max-width: 100px) 100vw, 100px"/>
+            </a>
+        </div>
+        <div class="meta">
+            <a href="https://livingat300main.ca/summer-smoothies/" class="next-title title">
+                <span>Next</span>
+                Summer Smoothies					
+            </a>
+        </div>
+    </div>
+</div>
+
+-->
