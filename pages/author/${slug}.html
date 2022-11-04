@@ -1,9 +1,9 @@
 <script>
   module.exports = function () {
 
-    const {loadTags, loadPosts, loadCategories } = require('./lib/data.js')
+    const {loadUsers, loadPosts, loadCategories } = require('./lib/data.js')
     const {binarySearch} = require('./lib/utils.js') 
-    const binary_search = (arr, id) => (arr,{id}, (a,b) => {
+    const binary_search = (arr, id) => binarySearch(arr,{id}, (a,b) => {
       return a.id - b.id
     })
     const setCategoriesInPosts = (categories, posts)=>{
@@ -15,14 +15,15 @@
             return post
         })
     }
-    const getPostByTagId = (posts,id,to,from)=>{
-      const re = posts.filter(p=>p.tags.findIndex(result_id=>id===result_id)>0).slice(from?from:0, to)
+    const getPostByAuthor = (posts,id)=>{
+      const re = posts.filter(p=>p.author === id)
       return re
     }
-    const categories = loadCategories()
+
     const posts = loadPosts()
-    const result = loadTags().map((tag) => {
-      let post_data = getPostByTagId(posts,tag.id, 10, 0)
+    const categories = loadCategories()
+    const result = loadUsers().map((user) => {
+      let post_data = getPostByAuthor(posts,user.id)
       post_data = setCategoriesInPosts(categories,post_data).map(p=>{
         p.categories = p.categories.map(c=>{
           return {name:c.name,link:c.link}
@@ -31,7 +32,7 @@
       })
       return {
         posts: post_data,
-        ...tag
+        ...user
       }
     })
     return result
@@ -146,7 +147,7 @@ ${fn.include("./pages/author/_author_api",data)}
                             </ul> 
                           </div>
                         </div>
-                        
+
                         <div class="block-title-area clearfix">
                           <h1 class="page-title block-title">${data.name}</h1>
                         </div>

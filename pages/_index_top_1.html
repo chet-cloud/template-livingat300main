@@ -2,11 +2,9 @@
 <script>
     module.exports = function(){
         const { getLastedPost, setCategoriesTagsInPosts } = require('./lib/data.js')
-		const post_data = getLastedPost(4) 
-        let result = setCategoriesTagsInPosts(post_data)
-        result = result.map((p)=>{
+        let result = getLastedPost(4).map((p)=>{
             //<a href="/category/300-main/" class="cat">300 Main</a>
-            p['categories'] = p.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`)
+            p['categories'] = p.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`).join('')
             return p
         })
         result = result.map((p)=>{
@@ -14,7 +12,6 @@
             p['date_long_form'] = new Date(p.date).toLocaleDateString('en-us', {year:"numeric", month:"short", day:"numeric"})
             return p
         })
-        
 		return result
     }
 </script>
@@ -23,11 +20,11 @@
     <div class="block-piece block-piece-1 cf">
         <article
             class="tipi-m-6 tipi-xs-12 elements-location-1 clearfix with-fi ani-base tipi-l-typo loop-0 preview-94 preview-grid grid-image-1 grid-spacing img-ani-1 article-ani article-ani-1 tile-design tile-design-1 elements-design-1 post-10477 post type-post status-publish format-standard has-post-thumbnail hentry category-300-main category-art-photography category-downtown-events category-exchange-district-events tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-bike-in-winnioeg tag-bike-tour-in-winnipeg tag-downtown-apartments tag-downtown-winnipeg tag-nuit-blanche-winnipeg tag-winnipeg-apartments">
-            <div class="mask"><a href="/${data[0].slug}/"
+            <div class="mask"><a href="${data[0].link}"
                     class="mask-img"><img width="900" height="680"
                         src="${data[0].yoast_head_json.og_image[0].url}"
                         class="attachment-zeen-900-900 size-zeen-900-900 wp-post-image"
-                        alt="" /></a><a href="/${data[0].slug}/"
+                        alt="" /></a><a href="${data[0].link}"
                     class="mask-overlay"></a></div>
             <div class="meta">
                 <div class="byline byline-2 byline-cats-design-1">
@@ -43,7 +40,7 @@
                 </div>
                 <div class="title-wrap">
                     <h3 class="title">
-                        <a href="/${data[0].slug}/">
+                        <a href="${data[0].link}">
                             ${data[0].title.rendered}
                         </a>
                     </h3>
@@ -57,13 +54,13 @@
     <div class="block-piece block-piece-2 cf">
         <article
             class="tipi-m-6 tipi-xs-12 elements-location-1 clearfix with-fi ani-base tipi-l-typo loop-1 preview-94 preview-grid grid-image-1 grid-spacing img-ani-1 article-ani article-ani-1 tile-design tile-design-1 elements-design-1 post-10429 post type-post status-publish format-standard has-post-thumbnail hentry category-apartment-hacks tag-apartment-building-in-downtown-winnipeg tag-apartment-living tag-apartment-living-winnipeg tag-downtown-living tag-gardening tag-small-garden tag-winnipeg-apartments">
-            <div class="mask"><a href="/${data[1].slug}/"
+            <div class="mask"><a href="${data[1].link}"
                     class="mask-img"><img width="585" height="293"
                     src="${data[1].yoast_head_json.og_image[0].url}"
                         class="attachment-zeen-585-293 size-zeen-585-293 wp-post-image"
                         alt="" loading="lazy"
                         sizes="(max-width: 585px) 100vw, 585px" /></a><a
-                    href="/${data[1].slug}/"
+                    href="${data[1].link}"
                     class="mask-overlay"></a></div>
             <div class="meta">
                 <div class="byline byline-2 byline-cats-design-1">
@@ -79,7 +76,7 @@
                 </div>
                 <div class="title-wrap">
                     <h3 class="title">
-                        <a href="/${data[1].slug}/">
+                        <a href="${data[1].link}">
                             ${data[1].title.rendered}
                         </a>
                     </h3>
@@ -88,13 +85,13 @@
         </article>
         <article
             class="tipi-m-3 tipi-xs-6 elements-location-1 clearfix with-fi ani-base tipi-m-typo loop-2 preview-94 preview-grid grid-image-1 grid-spacing img-ani-1 article-ani article-ani-1 tile-design tile-design-1 elements-design-1 post-10346 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants tag-apartment-living tag-lifestyle tag-smoothies">
-            <div class="mask"><a href="/${data[2].slug}/" class="mask-img"><img
+            <div class="mask"><a href="${data[2].link}" class="mask-img"><img
                         width="390" height="390"
                         src="${data[2].yoast_head_json.og_image[0].url}"
                         class="attachment-zeen-390-390 size-zeen-390-390 wp-post-image"
                         alt="" loading="lazy"
                         sizes="(max-width: 390px) 100vw, 390px" /></a><a
-                    href="/${data[2].slug}/" class="mask-overlay"></a></div>
+                    href="${data[2].link}" class="mask-overlay"></a></div>
             <div class="meta">
                 <div class="byline byline-2 byline-cats-design-1">
                     <div class="byline-part cats">
@@ -109,7 +106,7 @@
                 </div>
                 <div class="title-wrap">
                     <h3 class="title">
-                        <a href="/${data[2].slug}/">
+                        <a href="${data[2].link}">
                             ${data[2].title.rendered}
                         </a>
                     </h3>
@@ -122,13 +119,13 @@
         <article
             class="tipi-m-3 tipi-xs-6 elements-location-1 clearfix with-fi ani-base tipi-m-typo loop-3 preview-94 preview-grid grid-image-1 grid-spacing img-ani-1 article-ani article-ani-1 tile-design tile-design-1 elements-design-1 post-10314 post type-post status-publish format-standard has-post-thumbnail hentry category-food-restaurants category-lifestyle tag-downtown-winnipeg tag-downtown-winnipeg-restaurants tag-winnipeg-restaurants">
             <div class="mask">
-                <a href="/${data[3].slug}/"
+                <a href="${data[3].link}"
                     class="mask-img"><img width="390" height="390"
                     src="${data[3].yoast_head_json.og_image[0].url}"
                         class="attachment-zeen-390-390 size-zeen-390-390 wp-post-image"
                         alt="" loading="lazy"
                         sizes="(max-width: 390px) 100vw, 390px" /></a>
-                <a href="/${data[3].slug}/" class="mask-overlay"></a>
+                <a href="${data[3].link}" class="mask-overlay"></a>
             </div>
             <div class="meta">
                 <div class="byline byline-2 byline-cats-design-1">
@@ -144,7 +141,7 @@
                 </div>
                 <div class="title-wrap">
                     <h3 class="title">
-                        <a href="/${data[3].slug}/">
+                        <a href="${data[3].link}">
                             ${data[3].title.rendered}
                         </a>
                     </h3>

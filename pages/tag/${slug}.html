@@ -3,7 +3,7 @@
 
     const {loadTags, loadPosts, loadCategories } = require('./lib/data.js')
     const {binarySearch} = require('./lib/utils.js') 
-    const binary_search = (arr, id) => (arr,{id}, (a,b) => {
+    const binary_search = (arr, id) => binarySearch(arr,{id}, (a,b) => {
       return a.id - b.id
     })
     const setCategoriesInPosts = (categories, posts)=>{

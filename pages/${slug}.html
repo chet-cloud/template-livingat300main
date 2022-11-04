@@ -1,7 +1,7 @@
 <script>
 	module.exports = function () {
 		const { getLastedPost,loadPosts } = require('./lib/data.js')
-		const post_data = getLastedPost(10) //loadPosts()
+		const post_data = loadPosts() //getLastedPost(10) 
 		return post_data
 	}
 </script>
@@ -62,7 +62,7 @@ ${fn.include("pages/_slug_api")}
 								</div>
 							</div>
 							<ul id="menu-main-menu" class="menu-main-menu horizontal-menu tipi-flex font-3">
-								${fn.include("pages/_index_top_menu")}
+								${fn.include_rendered_template("pages/_index_top_menu")}
 							</ul>
 							<ul class="horizontal-menu font-3 menu-icons tipi-flex-eq-height">
 

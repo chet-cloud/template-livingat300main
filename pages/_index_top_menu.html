@@ -1,7 +1,7 @@
 <script>
     module.exports = function () {
         const article_template = require('./pages/_index_api_get_menu.js')
-        const {getPostByCategoryId} = require('./lib/data.js')
+        const {getPostByCategoryId, loadCategories} = require('./lib/data.js')
         function get_latest_post_by_category(category_id){
             const data = getPostByCategoryId(category_id,3)
             //const data = getJSONSync(`./out/data/category.${category_id}.json`)
@@ -14,13 +14,20 @@
             })
         }
 
+        const categories = loadCategories()
+        function get_category_info(category_id){
+            const cate =  categories.filter(c=>c.id === category_id)
+            //<a href="https://livingat300main.ca/category/lifestyle/" data-ppp="3" data-tid="29" data-term="category">Lifestyle</a>
+            return `<a href="${cate.link}" data-ppp="3" data-tid="${cate.id}" data-term="category">${cate.name}</a>`
+        }
+
         const article_template_container = () => `
 
         <li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home dropper drop-it mm-art mm-wrap-2 mm-wrap menu-item-101">
             <a href="https://livingat300main.ca/">Home</a>
         </li>
         <li id="menu-item-395" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-395">
-            <a href="https://livingat300main.ca/category/lifestyle/" data-ppp="3" data-tid="29" data-term="category">Lifestyle</a>
+            ${get_category_info(29)}
             <div class="menu mm-11 tipi-row" data-mm="11">
                 <div class="menu-wrap menu-wrap-more-10 tipi-flex">
                     <div id="block-wrap-395" class="block-wrap block-wrap-61 block-css-395 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="395">
@@ -51,7 +58,7 @@
             </div>
         </li>
         <li id="menu-item-393" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-393">
-            <a href="https://livingat300main.ca/category/culture/" data-ppp="3" data-tid="32" data-term="category">Culture</a>
+            ${get_category_info(32)}
             <div class="menu mm-11 tipi-row" data-mm="11">
                 <div class="menu-wrap menu-wrap-more-10 tipi-flex">
                     <div id="block-wrap-393" class="block-wrap block-wrap-61 block-css-393 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="393">
@@ -82,7 +89,7 @@
             </div>
         </li>
         <li id="menu-item-262" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-262">
-            <a href="https://livingat300main.ca/category/art-photography/" data-ppp="3" data-tid="27" data-term="category">Art &#038;Photography</a>
+            ${get_category_info(27)}
             <div class="menu mm-11 tipi-row" data-mm="11">
                 <div class="menu-wrap menu-wrap-more-10 tipi-flex">
                     <div id="block-wrap-262" class="block-wrap block-wrap-61 block-css-262 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="262">
@@ -113,7 +120,7 @@
             </div>
         </li>
         <li id="menu-item-394" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-394">
-            <a href="https://livingat300main.ca/category/environment/" data-ppp="3" data-tid="31" data-term="category">Environment</a>
+            ${get_category_info(31)}
             <div class="menu mm-11 tipi-row" data-mm="11">
                 <div class="menu-wrap menu-wrap-more-10 tipi-flex">
                     <div id="block-wrap-394" class="block-wrap block-wrap-61 block-css-394 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="394">
@@ -144,7 +151,7 @@
             </div>
         </li>
         <li id="menu-item-396" class="menu-item menu-item-type-taxonomy menu-item-object-category dropper drop-it mm-art mm-wrap-11 mm-wrap mm-color mm-sb-left menu-item-396">
-            <a href="https://livingat300main.ca/category/shopping/" data-ppp="3" data-tid="21" data-term="category">Shopping</a>
+            ${get_category_info(21)}
             <div class="menu mm-11 tipi-row" data-mm="11">
                 <div class="menu-wrap menu-wrap-more-10 tipi-flex">
                     <div id="block-wrap-396" class="block-wrap block-wrap-61 block-css-396 block-wrap-classic elements-design-1 block-skin-0 filter-wrap-2 block-col-self tipi-box tipi-row ppl-m-3 ppl-s-3 clearfix" data-id="396">

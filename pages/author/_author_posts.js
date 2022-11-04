@@ -11,11 +11,11 @@ const classes = ["tipi-xs-12 elements-location-1 clearfix with-fi ani-base artic
 
 
 const article_temple = (data,i)=>{
-    const cats = data.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`)
+    const cats = data.categories.map(c=>`<a href="${c.link}" class="cat">${c.name}</a>`).join('')
     return `
 <article class="${classes[i]}">
     <div class="preview-mini-wrap clearfix">
-        <div class="mask"><a href="/${data.slug}/"
+        <div class="mask"><a href="/${data.link}/"
                 class="mask-img"><img width="770" height="513"
                     src="${data.yoast_head_json.og_image[0].url}"
                     class="attachment-zeen-770-513 size-zeen-770-513 wp-post-image" alt=""
@@ -33,12 +33,12 @@ const article_temple = (data,i)=>{
                 </span>
             </div>
             <div class="title-wrap">
-                <h3 class="title"><a href="/${data.slug}/">${data.title.rendered}</a></h3>
+                <h3 class="title"><a href="/${data.link}/">${data.title.rendered}</a></h3>
             </div>
             <div class="excerpt body-color">
                 ${data.excerpt.rendered.substring(0,113)}...
                 <span class="read-more-wrap font-3">
-                    <a class="read-more" href="/${data.slug}/">Read More</a>
+                    <a class="read-more" href="/${data.link}/">Read More</a>
                 </span>
             </div>
         </div>

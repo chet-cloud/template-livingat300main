@@ -2,8 +2,8 @@
   module.exports = function () {
     const { getPostByCategoryId, setCategoriesInPosts, loadMenu, loadCategories } = require('./lib/data.js')
     const categories = loadCategories()
-    const result = loadMenu().filter(({ id }) => id !== undefined).map(({ name, id, url }) => {
-      if (id === undefined) return { name, url }
+    const result = loadMenu().filter(({ id }) => id !== undefined).map(({ name, id, url:link }) => {
+      if (id === undefined) return { name, url:link }
       const category = categories.filter(c => c.id === id)[0]
       let post_data = getPostByCategoryId(id, 10, 0)
       post_data = setCategoriesInPosts(post_data).map(p=>{
@@ -15,7 +15,7 @@
       return {
         name,
         id,
-        url,
+        url:link,
         posts: post_data,
         ...category
       }
