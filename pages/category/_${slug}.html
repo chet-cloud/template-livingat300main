@@ -1,0 +1,12 @@
+<script>
+	module.exports = async function () {
+		const {fetch_pages} = require('./lib/wp_api.js');
+		const {loadCategories} = require('./lib/data.js')
+		const slugs = loadCategories().map(p=>`/category/${p.slug}/`)
+		const pages = (await fetch_pages(slugs)).map((page,i)=>{
+			return {html:page, slug:slugs[i]}
+		})
+		return pages
+	}
+</script>
+${data.html}
