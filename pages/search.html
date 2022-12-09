@@ -1,7 +1,7 @@
 <script>
-	module.exports = async function () {
+	module.exports =  function () {
 		const {fetch_pages} = require('./lib/wp_api.js');
-		const data= await fetch_pages(['/?s=xx']);
+		const data=  fetch_pages(['/?s=xx']);
 		return [{html:data[0]}]
 	}
 </script>

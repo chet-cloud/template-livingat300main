@@ -1,8 +1,10 @@
 <script>
 	module.exports = async function () {
 		const {fetch_pages} = require('./lib/wp_api.js');
+		const {insert_in_head} = require('./lib/html_utils.js')
 		const data= await fetch_pages(['/']);
-		return [{html:data[0]}]
+		const home = insert_in_head(data[0],"pages/data/_request.html")
+		return [{html:home}]
 	}
 </script>
 ${data.html}

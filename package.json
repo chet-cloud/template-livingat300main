@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cchet/tengine": "^1.0.1",
     "axios": "^1.1.3",
     "axios-rate-limit": "^1.3.0",
     "dotenv": "^16.0.3",

@@ -57,5 +57,5 @@ var _= require('lodash');
 // // copy users.json for browser load
 // fse.copyFileSync(`./data/Users.json`,`./out/data/author.all.json`)
 
-generator("pages","out","public")
+require("@cchet/tengine")("pages","out","public")
 
